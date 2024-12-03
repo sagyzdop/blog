@@ -12,7 +12,7 @@ tags:
 
 ---
 
-Okay, let’s continue our journey through this existential crisis. Recall the example with Harry Potter and God from the [previous article](../../../2024/10/20/Are-You-Real.html). 
+Okay, let’s continue our journey through this existential crisis. Recall the example with Harry Potter and God from the [previous article](../../../2024/10/19/Are-You-Real.html). 
 
 ![Harry Potter and God](../../../../images/Harry_Potter_and_God.png)
 
