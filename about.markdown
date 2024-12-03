@@ -60,23 +60,4 @@ I believe no matter if you want it or not – answering the **questions** is cru
 
 You get the gist from my writing above. Aside from that, I'll probably be posting anything that I find relevant in general. Take a look if you are interested, and if you disagree or have something to add – your comment (in any language) is greatly appreciated! That's all it is for this blog.
 
-
-# The technical side of things
-
-This could have been done way simpler, because starting a blog probably has been the easiest thing to do since the Internet became accessible to masses. I guess, the next logical thing to do would be to start a podcast, right? haha.
-
-I used Markdown to HTML parser [^sources] , MySQL and just PHP. Also got familiar with version control using Git and GitHub. All of this took time, but by reinventing the wheel I have learnt so much stuff that I was curious about, and got my feet wet in development practice in general. It was worth it. I am happy.
-
-Special thanks to [OpenAI](https://openai.com) for [ChatGPT](https://chat.openai.com) that made the learning process more straightforward. It essentially replaces a human mentor. Although [Stack Overflow](https://stackoverflow.com) is the place where you usually find answers for almost all your trivial and not so trivial code-related questions, sometimes the question is so oddly specific that even Stack Overflow cannot help. Moreover, it can provide general guidance. You could *ask what to ask*, and where to look for an answer, and I think it is an invaluable thing to have for a beginner. 
-
-This is my first pet project that I am putting out like this. It is nothing compared to what people my age had been doing, but you gotta start somewhere right? And the best thing about it is that it proved me that I am on the right track. I like doing this. Maybe what I am doing is not exactly *Computer Science*, but I think it's close enough. I mean, it has got **computer** in the name ¯\\\_(ツ)_/¯
-
-Maybe I'll make something pretty next (?) I don't know, either way I have to make use out of this domain I spent money on, so there is some motivation to do something 😅 This will continue to serve it's purpose though. 
-
 Thank you for reading!
-
-[^sources]: References:
-    - [league/commonmark](https://commonmark.thephpleague.com) – markdown to HTML parser that made this project possible ❤️
-    - [phpdelusions](https://phpdelusions.net) – resource to learn about PHP and PDO in particular.
-    - [w3schools](https://www.w3schools.com) – good starting point for learning new technologies and a great reference source.
-    - [niklasfasching.de](https://niklasfasching.de/posts/just-enough-css/) – where I got the design for this blog.
