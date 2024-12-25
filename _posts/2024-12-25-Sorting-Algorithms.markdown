@@ -24,6 +24,8 @@ So, after some research, and couple prompts to ChatGPT later I tried to structur
 
 Sources I used are [DSA Tutorial from w3schools](https://www.w3schools.com/dsa/index.php) and from [Programiz.com](https://www.programiz.com/dsa/bubble-sort). Reference them for visuals and more details, but be careful, because they are not great sources either.
 
+If you find factual errors in this article, or want to contribute – feel free to propose a change on [github](https://github.com/sagyzdop/blog/blob/main/_posts/2024-12-25-Sorting-Algorithms.markdown?plain=1).
+
 ---
 
 **Table of contents**
@@ -40,57 +42,51 @@ Sorting algorithms can be categorized as follows:
 
 | Internal Sorting        | External Sorting                          |
 | ----------------------- | ----------------------------------------- |
-| All data fits in RAM.   | Requires disk storage.                    |
-| Bubble Sort, Heap Sort. | External Merge Sort, Multiway Merge Sort. |
+| All data fits in RAM   | Requires disk storage           |
+| Bubble Sort, Selection Sort | External Merge Sort, Multiway Merge Sort |
 
 ### Memory Usage (In-Place vs. Extra Memory)
 
 | In-Place Sorting                                                    | Out-of-Place Sorting                 |
 | ------------------------------------------------------------------- | ------------------------------------ |
-| Modifies the input data structure without significant extra memory. | Requires extra memory to store data. |
-| Quick Sort, Bubble Sort.                                            | Merge Sort, Counting Sort.           |
+| Modifies the input data structure without significant extra memory | Requires extra memory to store data |
+| Quick Sort, Bubble Sort                                      | Merge Sort, Counting Sort         |
 
 ### Stability of Sorting
 
 | Stable Algorithms                              | Unstable Algorithms                                    |
 | ---------------------------------------------- | ------------------------------------------------------ |
-| Maintain the relative order of equal elements. | May not preserve the relative order of equal elements. |
-| Merge Sort, Bubble Sort.                       | Quick Sort, Heap Sort.                                 |
-
-### Computational Complexity
-
-| Time Complexity                                            | Space Complexity                                  |
-| ---------------------------------------------------------- | ------------------------------------------------- |
-| Considers best-case, worst-case, and average-case runtime. | Considers the amount of auxiliary memory used.    |
-| $O(n^2)$: Bubble Sort, Selection Sort.                     | Low space: Quick Sort.<br>High space: Merge Sort. |
-
-### Use of Recursion
-
-| Recursive Algorithms                             | Iterative Algorithms            |
-| ------------------------------------------------ | ------------------------------- |
-| Use recursion for divide-and-conquer strategies. | Use loops instead of recursion. |
-| Merge Sort, Quick Sort.                          | Bubble Sort, Selection Sort.    |
+| Maintain the relative order of equal elements | May not preserve the relative order of equal elements |
+| Merge Sort, Bubble Sort               | Quick Sort, Heap Sort                                 |
 
 ### Comparison vs. Non-Comparison
 
 | Comparison-Based Sorting           | Non-Comparison-Based Sorting                                           |
 | ---------------------------------- | ---------------------------------------------------------------------- |
-| Compare elements to decide order.  | Do not directly compare elements but use other properties (like keys). |
-| Merge Sort, Quick Sort, Heap Sort. | Radix Sort, Counting Sort.                                             |
-
-### Problem-Specific Behavior
-
-| General-Purpose Algorithms | Specialized Algorithms                |
-| -------------------------- | ------------------------------------- |
-| Work for any type of data. | Tailored for specific types of input. |
-| Quick Sort, Merge Sort.    | Bucket Sort.                          |
+| Compare elements to decide order | Do not directly compare elements but use other properties (like keys). |
+| Merge Sort, Quick Sort | Radix Sort, Counting Sort                                          |
 
 ### Performance with Sorted/Unsorted Data
 
 | Adaptive Algorithms                              | Non-Adaptive Algorithms                    |
 | ------------------------------------------------ | ------------------------------------------ |
-| Perform better if the input is partially sorted. | Performance is independent of input order. |
-| Insertion Sort.                                  | Selection Sort.                            |
+| Perform better if the input is partially sorted | Performance is independent of input order |
+| Insertion Sort                            | Selection Sort                            |
+
+### Computational Complexity
+
+| Time Complexity                                            | Space Complexity                                  |
+| ---------------------------------------------------------- | ------------------------------------------------- |
+| Considers best-case, worst-case, and average-case runtime  | Considers the amount of auxiliary memory used   |
+| $O(n*log(n))$: Merge Sort<br>$O(n^2)$: Bubble Sort, Selection Sort                   | Low space: Quick Sort.<br>High space: Merge Sort |
+
+### Use of Recursion
+
+| Recursive Algorithms                             | Iterative Algorithms            |
+| ------------------------------------------------ | ------------------------------- |
+| Use recursion for divide-and-conquer strategies | Use loops instead of recursion |
+| Merge Sort, Quick Sort                          | Bubble Sort, Selection Sort   |
+
 
 ---
 
@@ -119,17 +115,17 @@ def bubbleSort(array):
     # Loop to compare array elements
     for j in range(0, len(array) - i - 1):
 
-      # compare two adjacent elements
-      # change > to < to sort in descending order
+      # Compare two adjacent elements
+      # Change > to < to sort in descending order
       if array[j] > array[j + 1]:
 
-        # swapping occurs if elements
-        # are not in the intended order
+        # Swapping occurs if elements
+        # Are not in the intended order
         array[j], array[j+1] = array[j+1], array[j]
         swapped = True
           
-    # no swapping means the array is already sorted
-    # so no need for further comparison
+    # No swapping means the array is already sorted
+    # So no need for further comparison
     if not swapped:
 	    break
 
@@ -175,12 +171,12 @@ def selectionSort(array, size):
         min_idx = step
 
         for i in range(step + 1, size):
-            # to sort in descending order, change > to < in this line
-            # select the minimum element in each loop
+            # To sort in descending order, change > to < in this line
+            # Select the minimum element in each loop
             if array[i] < array[min_idx]:
                 min_idx = i
          
-        # put min at the correct position
+        # Put min at the correct position
         (array[step], array[min_idx]) = (array[min_idx], array[step])
 
 
@@ -276,7 +272,8 @@ data = [1, 5, 9, 4, 3] # j = 2, array[2] = 9 > 4 -> array[3] = 9
 data = [1, 5, 9, 9, 3] # j = 1, array[1] = 5 > 4 -> array[2] = 5
 data = [1, 5, 5, 9, 3] # j = 0, array[0] = 1 < 4 ->
 
-# Notice how the value of j does not go to -1 because the "sorted" place of 4 is not at the very start of the array
+# Notice how the value of j does not go to -1 because the 
+# "sorted" place of 4 is not at the very start of the array
 
 data = [1, 4, 5, 9, 3] # j + 1 = 1, array[1] = 4
 ```
@@ -740,9 +737,9 @@ targetVal = 9
 result = linearSearch(arr, targetVal)
 
 if result != -1:
-    print("Value",targetVal,"found at index",result)
+    print("Value", targetVal, "found at index", result)
 else:
-    print("Value",targetVal,"not found")
+    print("Value", targetVal, "not found")
 ```
 
 ### Characteristics
@@ -791,7 +788,7 @@ myTarget = 15
 result = binarySearch(myArray, myTarget)
 
 if result != -1:
-    print("Value",myTarget,"found at index", result)
+    print("Value", myTarget, "found at index", result)
 else:
     print("Target not found in array.")
 ```

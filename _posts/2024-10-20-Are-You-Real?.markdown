@@ -11,8 +11,6 @@ tags:
 
 ---
 
-
-
 ### Introduction
 
 Philosophy has always appeared to me as some elitist discipline. I was scared of being called a poseur if I wasn't fluent in all the relevant literature and didn't quote the big names like Kant from the tip of my tongue. For some reason rocket science seemed more approachable than philosophy.
