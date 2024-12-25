@@ -14,6 +14,14 @@ tags:
 
 Okay, let’s continue our journey through this existential crisis. Recall the example with Harry Potter and God from the [previous article](../../../2024/10/19/Are-You-Real.html). 
 
+---
+
+**Table of contents**
+* TOC
+{:toc}
+
+---
+
 ![Harry Potter and God](../../../../images/Harry_Potter_and_God.png)
 
 > Everything that you can possibly think of – exists, but might not be real.
@@ -24,7 +32,7 @@ Now, what does the reality that is **real for both of us** look like? In other w
 
 > What are the things that we can agree to include in our realities?
 
-# Elements of **Common Reality**
+## Elements of **Common Reality**
 
 **Time.** The first thing we can agree on is the direction of time. It is true that in different circumstances the perception of time can change dramatically. The same 60 minutes can feel like an eternity on a boring lecture, but fly by quickly on an exam. However, no one's clock ticks backward. You don't get younger as time passes.
 
@@ -36,7 +44,7 @@ Surprisingly, this is all we need. Now if we agree on all of the above, the next
 
 > What is the best explanation for the things that happen in reality constituted by these elements?
 
-# Theory
+## Theory
 
 The easiest way is to take a guess. In the context of this discussion, such a guess would mean a claim that describes the world. In other words, a claim that explains something that happens in reality. In everyday sense, we can call such a claim a theory. The next question is:
 
@@ -46,25 +54,25 @@ A good theory is one that consistently makes correct predictions about the thing
 
 In this sense, a theological theory about the world is a valid, testable one, both in principle and in practice. However, all the testing to date shows no evidence for it, which is a problem.
 
-# Traditional Religion
+## Traditional Religion
 
-## Is Ultimate
+### Is Ultimate
 
 The first problem I find in traditional religions is that they claim to be the ULTIMATE truth about the world. They are based on universal statements that fall apart upon closer inspection and lead to contradictions within themselves. 
 
 ![Epicurean Paradox](../../../../images/Epicurean-Paradox.png)
 
-## Is Normative
+### Is Normative
 
 Secondly, traditional religion is normative. I highly doubt the idea that ethics is something that is woven into the fabric of the universe. I will talk more about ethics in another post dedicated to value theory.
 
-## Is Too Good To Be True
+### Is Too Good To Be True
 
 In my opinion, traditional religion is a result of the arrogance of the self-centric human mind that places too much importance upon its own existence. If traditional God is real, it/he/she wouldn't care about people.
 
 Despite all these problems, the simplicity and spiritual power of theological theory that fuels the indomitable human spirit is undeniable. Faith is what kept, keeps and will keep many to do great things. However, to build a “good theory” by the definition given above, we need something else.
 
-# So, Why Physicalism?
+## So, Why Physicalism?
 
 Ever since being introduced to physics in seventh grade I developed a physicalist view of reality. I remember being fascinated by the kinetic theory of gasses according to which temperature is nothing more than the sum of kinetic energies of the molecules. It appeared to me that physics is the most straightforward explanation for everything that ever happens in nature. [^1]
 
@@ -74,7 +82,7 @@ A system being nothing more than the sum of its parts is known as reductionism a
 
 Physicalism is a theory that **works** within the boundaries of the common reality that we identified before. As opposed to any divine theory it withstands rigorous scientific testing and therefore has a lot of supporting evidence.
 
-## Argument for Physicalism
+### Argument for Physicalism
 
 1. There are some things that are part of everyone’s reality.  
 2. The reality constituted by those elements can be described with a theory that makes claims and predictions about it.  
@@ -82,7 +90,7 @@ Physicalism is a theory that **works** within the boundaries of the common reali
 4. To date, the theory that has the most evidence is physicalism.  
 5. Therefore, physicalism is the theory that all of us should accept.
 
-# Can Science Find An Answer?
+## Can Science Find An Answer?
 
 The focus of modern physics for the last century was finding the theory of everything – a unifying, final theory with which we could explain everything, and possibly answer the Ultimate Question asked in the first article: 
 
@@ -100,12 +108,12 @@ Science is great at answering the *how* but isn’t designed to answer *why*. Th
 
 A God without contradictions is possible, but not in the way described by traditional religions. The God that **works** in the common reality is only an answer to the ultimate question, nothing more, nothing less.
 
-## Argument For God
+### Argument For God
 
 1. There is no way to answer the ultimate question other than God.  
 2. Therefore God will never die.
 
-# Agnosticism – an Acceptance of Ignorance
+## Agnosticism – an Acceptance of Ignorance
 
 Here is a hot take\!
 
@@ -127,7 +135,7 @@ That sounds like a superpower, doesn’t it? However, if you were to gain such p
 
 In my opinion this results in an interesting implication that the emergence of consciousness and free will is the direct result of the limitation of our brain to construct the causal relationship between things happening in the world. But since it has to end somewhere personal agency is the most **efficient** way to explain it. I will talk more about it in the next article about the origins of the mind. For now, the important thing is the fact that in principle, everything is explainable within the boundaries of the common reality that we defined previously.
 
-# Determinism and Free Will
+## Determinism and Free Will
 
 Determined life and no free will is a very hard pill to swallow.
 
@@ -159,7 +167,7 @@ Similarly, the Beatles' song “Can't Buy Me Love” is a false claim. In princi
 
 This might sound depressing. It is hard to find meaning in such a universe. But the good news is that it does not matter.
 
-# Pragmatism and Emergence of Meaning
+## Pragmatism and Emergence of Meaning
 
 The absence of free will or ultimate meaning doesn’t stop us from living meaningful lives in a practical sense. That’s where **pragmatism** comes in.
 
@@ -167,7 +175,7 @@ I take an agnostic stance on the possibility of true knowledge – the idea tha
 
 We’ve developed tools to build this kind of knowledge. **Deduction**, **induction**, and **abduction** are three logical methods we use to reason about the world. Using these tools, we’ve gotten remarkably good at turning observations into knowledge and applying that knowledge to improve our lives. From understanding the natural world to developing technology, this process has allowed us to progress, even in a universe that might lack inherent meaning.
 
-# Conclusion
+## Conclusion
 
 Summing up this contemplation about existence we can conclude that:
 

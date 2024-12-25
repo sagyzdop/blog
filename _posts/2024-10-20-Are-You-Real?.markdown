@@ -11,7 +11,9 @@ tags:
 
 ---
 
-## Introduction
+
+
+### Introduction
 
 Philosophy has always appeared to me as some elitist discipline. I was scared of being called a poseur if I wasn't fluent in all the relevant literature and didn't quote the big names like Kant from the tip of my tongue. For some reason rocket science seemed more approachable than philosophy.
 
@@ -39,7 +41,15 @@ Therefore, for any philosophical discussion to make sense and have a meaningful 
 
 Now let's dive into it.
 
-# Are You Real?
+## Are You Real?
+
+---
+
+**Table of contents**
+* TOC
+{:toc}
+
+---
 
 ## Ultimate Objective Reality
 

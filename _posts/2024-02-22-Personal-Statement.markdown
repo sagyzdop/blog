@@ -42,9 +42,3 @@ There is one particular shot worth mentioning from all the bits I filmed that da
 Although I had to make tons of compromises, the [video](https://youtu.be/0UWBUMQbKr8) turned out great! It even had visual effects. Even though I spent two hours on just a one-second sequence, it was totally worth it, and hey, thanks to that, now I know how to do a screen replacement in After Effects! 
   
 But the real feeling of accomplishment and joy came to me earlier when I got our grumpy grannies to laugh by saying a flattering compliment at the end of our shoot: "You should accept an offer to star in a movie if you'll be getting any from Hollywood." 
-
----
-
-# P.S.
-
-Тарантиномын ғо а так 🤠

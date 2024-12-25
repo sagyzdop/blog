@@ -16,6 +16,12 @@ tags:
 
 ---
 
+**Table of contents**
+* TOC
+{:toc}
+
+---
+
 I've always felt a sense of admiration and envy towards people who knew what they wanted to do with their lives early on.
 
 > Who do you want to be when you grow up?
@@ -122,10 +128,10 @@ Notice how when formulated like this, monetary gain is not the sole motivation t
 
 A really useful insight that Mostafa brought up was that a job is essentially a relationship between an employer and an employee. To be satisfied at your job, you have to make sure that these two things match:
 
-| Your needs                      | An employer's needs               |
+| Your needs                      | Employer's needs               |
 | ------------------------------- | --------------------------------- |
-| What YOU want to do             | What the EMPLOYER wants YOU to do |
-| What YOU want an EMPLOYER to do | What a EMPLOYER wants to do       |
+| What YOU want to do             | What EMPLOYER wants YOU to do |
+| What YOU want your EMPLOYER to do | What EMPLOYER wants to do       |
 
 If these requirements are satisfied, you have found a perfect job for yourself or at least a workplace that you can build your career in.
 
@@ -147,7 +153,7 @@ With all that said, one thing cannot be sacrificed – people. Be careful when m
 
 ---
 
-# P.S.
+# P.S.:
 
 I doubt the liberal idea of:
 
