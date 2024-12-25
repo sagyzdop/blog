@@ -561,7 +561,7 @@ A best case scenario for Radix Sort is if there are lots of values to sort, but 
 
 A worst case scenario for Radix Sort would be if there are as many digits in the highest value as there are values to sort. This is perhaps not a common scenario, but the time complexity would be $O(n^2)$ in this case.
 
-The most average or common case is perhaps if the number of digits k is something like $k(n)=log(n)$. If so, Radix Sort gets time complexity $O(n*log(n))$. An example of such a case would be if there are million values to sort, and the values have 6 digits.
+The most average or common case is perhaps for example if there are million values to sort, and the values have 6 digits. If so, Radix Sort gets time complexity $O(n*log(n))$.
 
 ---
 
