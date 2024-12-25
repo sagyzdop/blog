@@ -20,7 +20,7 @@ And for a long time this bothered me. It felt like I can't call myself a real pr
 
 But there must be a valid reason to teach this, right? Learning it certainly wouldn't hurt. However, I was surprised to discover that for something that is taught so commonly and frequently – there is no single reliable and complete source on the topic (or maybe I just didn't search well enough). Information is scattered around, and often different sources contradict each other. 
 
-So, after some research, and couple prompts to ChatGPT later I tried to structure what was out there, trying to ensure factual accuracy and clarity.
+So, after some research, and couple prompts to ChatGPT later I tried to structure what was out there, trying to ensure factual accuracy and clarity. Also note that there is two searching algorithms mentioned at the end.
 
 Sources I used are [DSA Tutorial from w3schools](https://www.w3schools.com/dsa/index.php) and from [Programiz.com](https://www.programiz.com/dsa/bubble-sort). Reference them for visuals and more details, but be careful, because they are not great sources either.
 
@@ -170,17 +170,25 @@ Basically, it can be understood as an inverse of a [Bubble Sort](#bubble-sort).
 ### Code
 
 ```python
-my_array = [64, 34, 25, 12, 22, 11, 90, 5]
+def selectionSort(array, size):
+    for step in range(size):
+        min_idx = step
 
-n = len(my_array)
-for i in range(n):
-    min_index = i
-    for j in range(i+1, n):
-        if my_array[j] < my_array[min_index]:
-            min_index = j   
-    my_array[i], my_array[min_index] = my_array[min_index], my_array[i]
+        for i in range(step + 1, size):
+            # to sort in descending order, change > to < in this line
+            # select the minimum element in each loop
+            if array[i] < array[min_idx]:
+                min_idx = i
+         
+        # put min at the correct position
+        (array[step], array[min_idx]) = (array[min_idx], array[step])
 
-print("Sorted array:", my_array)
+
+data = [-2, 45, 0, 11, -9]
+print('Unsorted:', data)
+size = len(data)
+selectionSort(data, size)
+print('Sorted:', data)
 ```
 
 ### Characteristics
