@@ -26,15 +26,16 @@ Sources I used are [DSA Tutorial from w3schools](https://www.w3schools.com/dsa/i
 
 If you find factual errors in this article, or want to contribute – feel free to propose a change on [github](https://github.com/sagyzdop/blog/blob/main/_posts/2024-12-25-Sorting-Algorithms.markdown?plain=1).
 
+**Table of contents**
+
 ---
 
-**Table of contents**
 * TOC
 {:toc}
 
----
-
 ## Categorization of Sorting Algorithms
+
+---
 
 Sorting algorithms can be categorized as follows (note that the list of examples in the table are just the ones present in this article, there are more examples of algorithms you can put there that are not mentioned in this article, like Heap Sort): 
 
@@ -88,11 +89,12 @@ Sorting algorithms can be categorized as follows (note that the list of examples
 | Time Complexity                                                                                                                       | Space Complexity                                                             |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
 | Considers best-case, worst-case, and average-case runtime                                                                             | Considers the amount of auxiliary memory used                                |
-| Faster ($O(n*log(n))$):[Merge Sort](#merge-sort)<br>Slower ($O(n^2)$): [Bubble Sort](#bubble-sort), [Selection Sort](#selection-sort) | Less space: [Quicksort](#quicksort)<br>More space: [Merge Sort](#merge-sort) |
+| Faster ($O(n*log(n))$): [Merge Sort](#merge-sort)<br>Slower ($O(n^2)$): [Bubble Sort](#bubble-sort), [Selection Sort](#selection-sort) | Less space: [Quicksort](#quicksort)<br>More space: [Merge Sort](#merge-sort) |
 
----
 
 ## Bubble Sort
+
+---
 
 The word "Bubble" comes from how this algorithm works, it makes the highest values "bubble up".
 
@@ -153,9 +155,9 @@ While swapping two elements, we need some extra space to store temporary values.
 
 The algorithm is trivially stable.
 
----
-
 ## Selection Sort
+
+---
 
 Basically, it can be understood as an inverse of a [Bubble Sort](#bubble-sort).
 
@@ -209,9 +211,9 @@ As with [Bubble Sort](#bubble-sort), while swapping two elements, we need some e
 
 And the algorithm is also trivially stable.
 
----
-
 ## Insertion Sort
+
+---
 
 The Insertion Sort algorithm uses one part of the array to hold the sorted values, and the other part of the array to hold values that are not sorted yet.
 
@@ -290,9 +292,9 @@ data = [1, 4, 5, 9, 3] # j + 1 = 1, array[1] = 4
 | Space Complexity | $O(1)$   |
 | Stability        | Yes      |
 
----
-
 ## Quick Sort
+
+---
 
 The Quicksort algorithm takes an array of values, chooses one of the values as the 'pivot' element, and moves the other values so that lower values are on the left of the pivot element, and higher values are on the right of it.
 
@@ -382,9 +384,9 @@ print("Sorted:", data)
 | Space Complexity | $O(log(n))$   |
 | Stability        | No            |
 
----
-
 ## Counting Sort
+
+---
 
 The Counting Sort algorithm sorts an array by counting the number of times each value occurs.
 
@@ -470,9 +472,9 @@ In a best case scenario, $k$ is very small compared to $n$ and Counting Sort h
 
 But in a worst case scenario, the range of possible different values k is very big compared to the number of values n and Counting Sort can have time complexity $O(n^2)$ or even worse.
 
----
-
 ## Radix Sort
+
+---
 
 The Radix Sort algorithm sorts an array by individual digits, starting with the least significant digit (the rightmost one).
 
@@ -570,9 +572,9 @@ A worst case scenario for Radix Sort would be if there are as many digits in the
 
 The most average or common case is perhaps for example if there are million values to sort, and the values have 6 digits. If so, Radix Sort gets time complexity $O(n*log(n))$.
 
----
-
 ## Merge Sort
+
+---
 
 The Merge Sort algorithm is a divide-and-conquer algorithm that sorts an array by first breaking it down into smaller arrays, and then building the array back together the correct way so that it is sorted.
 
@@ -711,9 +713,9 @@ While merging two arrays, we require an auxiliary space to temporarily store the
 
 Merge sort is stable because if there is duplicates, the ones that come earlier in the array stay on the left and ones that come later in the array stay on the right. Their relative positions are preserved in the merging stage.
 
----
-
 ## Linear Search
+
+---
 
 The Linear Search algorithm searches through an array and returns the index of the value it searches for.
 
@@ -750,9 +752,9 @@ else:
 | ---------------- | ------ |
 | Space Complexity | $O(1)$ |
 
----
-
 ## Binary Search
+
+---
 
 Binary Search is much faster than Linear Search, but requires a **sorted** array to work.
 
