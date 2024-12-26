@@ -36,57 +36,59 @@ If you find factual errors in this article, or want to contribute – feel free 
 
 ## Categorization of Sorting Algorithms
 
-Sorting algorithms can be categorized as follows:
+Sorting algorithms can be categorized as follows (note that the list of examples in the table are just the ones present in this article, there are more examples of algorithms you can put there that are not mentioned in this article, like Heap Sort): 
 
 ### Data Location (RAM vs. Disk)
 
-| Internal Sorting        | External Sorting                          |
-| ----------------------- | ----------------------------------------- |
-| All data fits in RAM   | Requires disk storage           |
-| Bubble Sort, Selection Sort | External Merge Sort, Multiway Merge Sort |
+| Internal Sorting                                                                                                                                                                                 | External Sorting          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------- |
+| All data fits in RAM.                                                                                                                                                                            | Requires disk storage.    |
+| [Bubble Sort](#bubble-sort)<br>[Selection Sort](#selection-sort)<br>[Insertion Sort](#insertion-sort)<br>[Quicksort](#quicksort)<br>[Counting Sort](#counting-sort)<br>[Radix Sort](#radix-sort) | [Merge Sort](#merge-sort) |
 
 ### Memory Usage (In-Place vs. Extra Memory)
 
-| In-Place Sorting                                                    | Out-of-Place Sorting                 |
-| ------------------------------------------------------------------- | ------------------------------------ |
-| Modifies the input data structure without significant extra memory | Requires extra memory to store data |
-| Quick Sort, Bubble Sort                                      | Merge Sort, Counting Sort         |
+| In-Place Sorting                                                                                                                 | Out-of-Place Sorting                                                                      |
+| -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Modifies the input data structure without significant extra memory.                                                              | Requires extra memory to store data.                                                      |
+| [Bubble Sort](#bubble-sort)<br>[Selection Sort](#selection-sort)<br>[Insertion Sort](#insertion-sort)<br>[Quicksort](#quicksort) | [Merge Sort](#merge-sort)<br>[Counting Sort](#counting-sort)<br>[Radix Sort](#radix-sort) |
 
 ### Stability of Sorting
 
-| Stable Algorithms                              | Unstable Algorithms                                    |
-| ---------------------------------------------- | ------------------------------------------------------ |
-| Maintain the relative order of equal elements | May not preserve the relative order of equal elements |
-| Merge Sort, Bubble Sort               | Quick Sort, Heap Sort                                 |
+| Stable Algorithms                                                                                                                                             | Unstable Algorithms                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| Maintain the relative order of equal elements.                                                                                                                | May not preserve the relative order of equal elements.       |
+| [Bubble Sort](#bubble-sort)<br>[Insertion Sort](#insertion-sort)<br>[Counting Sort](#counting-sort)<br>[Radix Sort](#radix-sort)<br>[Merge Sort](#merge-sort) | [Quicksort](#quicksort)<br>[Selection Sort](#selection-sort) |
 
 ### Comparison vs. Non-Comparison
 
-| Comparison-Based Sorting           | Non-Comparison-Based Sorting                                           |
-| ---------------------------------- | ---------------------------------------------------------------------- |
-| Compare elements to decide order | Do not directly compare elements but use other properties (like keys). |
-| Merge Sort, Quick Sort | Radix Sort, Counting Sort                                          |
+| Comparison-Based Sorting                                                                                                                                      | Non-Comparison-Based Sorting                                           |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Compare elements to decide order.                                                                                                                             | Do not directly compare elements but use other properties (like keys). |
+| [Bubble Sort](#bubble-sort)<br>[Selection Sort](#selection-sort)<br>[Insertion Sort](#insertion-sort)<br>[Quicksort](#quicksort)<br>[Merge Sort](#merge-sort) | [Counting Sort](#counting-sort)<br>[Radix Sort](#radix-sort)           |
 
 ### Performance with Sorted/Unsorted Data
 
-| Adaptive Algorithms                              | Non-Adaptive Algorithms                    |
-| ------------------------------------------------ | ------------------------------------------ |
-| Perform better if the input is partially sorted | Performance is independent of input order |
-| Insertion Sort                            | Selection Sort                            |
+| Adaptive Sorting                                 | Non-Adaptive Sorting                                                                                                                                                                     |
+| ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Perform better if the input is partially sorted. | Performance is independent of input order.                                                                                                                                               |
+| [Insertion Sort](#insertion-sort)                | [Bubble Sort](#bubble-sort)<br>[Selection Sort](#selection-sort)<br>[Counting Sort](#counting-sort)<br>[Radix Sort](#radix-sort)<br>[Quicksort](#quicksort)<br>[Merge Sort](#merge-sort) |
+
+### Algorithm Structure
+
+| Recursive Sorting                                    | Iterative Sorting                                                                                                                                                     |
+| ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Use recursion for divide-and-conquer strategies.     | Use loops instead of recursion.                                                                                                                                       |
+| [Quicksort](#quicksort)<br>[Merge Sort](#merge-sort) | [Bubble Sort](#bubble-sort)<br>[Selection Sort](#selection-sort)<br>[Insertion Sort](#insertion-sort)<br>[Counting Sort](#counting-sort)<br>[Radix Sort](#radix-sort) |
+
 
 ### Computational Complexity
 
-| Time Complexity                                            | Space Complexity                                  |
-| ---------------------------------------------------------- | ------------------------------------------------- |
-| Considers best-case, worst-case, and average-case runtime  | Considers the amount of auxiliary memory used   |
-| $O(n*log(n))$: Merge Sort<br>$O(n^2)$: Bubble Sort, Selection Sort                   | Low space: Quick Sort.<br>High space: Merge Sort |
+> Look in the **Characteristics** of each algorithm for more detail.
 
-### Use of Recursion
-
-| Recursive Algorithms                             | Iterative Algorithms            |
-| ------------------------------------------------ | ------------------------------- |
-| Use recursion for divide-and-conquer strategies | Use loops instead of recursion |
-| Merge Sort, Quick Sort                          | Bubble Sort, Selection Sort   |
-
+| Time Complexity                                                                                                                       | Space Complexity                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| Considers best-case, worst-case, and average-case runtime                                                                             | Considers the amount of auxiliary memory used                                |
+| Faster ($O(n*log(n))$):[Merge Sort](#merge-sort)<br>Slower ($O(n^2)$): [Bubble Sort](#bubble-sort), [Selection Sort](#selection-sort) | Less space: [Quicksort](#quicksort)<br>More space: [Merge Sort](#merge-sort) |
 
 ---
 
