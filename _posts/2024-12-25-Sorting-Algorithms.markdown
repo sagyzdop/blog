@@ -37,7 +37,7 @@ If you find factual errors in this article, or want to contribute – feel free 
 
 ---
 
-Sorting algorithms can be categorized as follows (note that the list of examples in the table are just the ones present in this article, there are more examples of algorithms you can put there that are not mentioned in this article, like Heap Sort): 
+Sorting algorithms can be categorized as follows (note that the list of examples in the tables are just the ones present in this article, there are more examples of algorithms you can put there that are not mentioned, like [Heap Sort](https://www.programiz.com/dsa/heap-sort)): 
 
 ### Data Location (RAM vs. Disk)
 
