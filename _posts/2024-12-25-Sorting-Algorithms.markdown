@@ -292,7 +292,7 @@ data = [1, 4, 5, 9, 3] # j + 1 = 1, array[1] = 4
 | Space Complexity | $O(1)$   |
 | Stability        | Yes      |
 
-## Quick Sort
+## Quicksort
 
 ---
 
@@ -566,7 +566,7 @@ Here:
 - $n$ is the number of values
 - $k$ the number of digits in the highest value.
 
-A best case scenario for Radix Sort is if there are lots of values to sort, but the values have few digits. For example if there are more than a million values to sort, and the highest value is 999, with just three digits. In such a case the time complexity $O(n*k)$ can be simplified to just$ $O(n)$.
+A best case scenario for Radix Sort is if there are lots of values to sort, but the values have few digits. For example if there are more than a million values to sort, and the highest value is 999, with just three digits. In such a case the time complexity $O(n*k)$ can be simplified to just $O(n)$.
 
 A worst case scenario for Radix Sort would be if there are as many digits in the highest value as there are values to sort. This is perhaps not a common scenario, but the time complexity would be $O(n^2)$ in this case.
 
