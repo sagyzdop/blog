@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What to do after School? A Conventional Approach"
-summary: "Compilation of thoughts on questions that have bothered me and my peers in the last years of school."
+excerpt: "Compilation of thoughts on questions that have bothered me and my peers in the last years of school."
 date: 2024-02-12 00:00:00 +0500
 categories: longread
 tags:
@@ -14,11 +14,6 @@ tags:
 - money
 - motivation
 
----
-
-**Table of contents**
-* TOC
-{:toc}
 
 ---
 
@@ -37,6 +32,15 @@ Now, the problem for many of my peers and for me personally is the fear of makin
 To resolve all this mess back in 11th grade, I approached @mostafay.91 [^mostafa] with these questions. Most of the ideas discussed here I got from that, I dare say, life-changing conversation we had.
 
 Also, remember that all of this discussion is from the perspective of a young person who has a life ahead, born and raised in a post-Soviet country. But I suspect that this could also be relevant for some men in their 40's going through a mid-life crisis 🤠
+
+**Table of contents**
+
+---
+
+* TOC
+{:toc}
+
+---
 
 # Answer the question "Why?"
 
@@ -153,7 +157,7 @@ With all that said, one thing cannot be sacrificed – people. Be careful when m
 
 ---
 
-# P.S.:
+# P.S.
 
 I doubt the liberal idea of:
 

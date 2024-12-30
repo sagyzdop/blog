@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Are You Real?"
-summary: "Answers to the questions you could probably do just fine without ever asking."
+excerpt: "Answers to the questions you could probably do just fine without ever asking."
 date: 2024-10-20 00:00:00 +0500
 categories: longread
 tags:
@@ -41,9 +41,11 @@ Now let's dive into it.
 
 ## Are You Real?
 
----
 
 **Table of contents**
+
+---
+
 * TOC
 {:toc}
 

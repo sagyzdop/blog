@@ -5,9 +5,15 @@
 @import "minima";
 
 .site-title::before {
-    content: url("/assets/images/logo.svg");
-    display: inline-block;
-    position: relative;
-    width: 35px;
-    top: 5px;
-    }
+  content: url("/assets/images/logo.svg");
+  display: inline-block;
+  position: relative;
+  width: 35px;
+  top: 5px;
+}
+
+hr {
+  border: 1px solid grey;
+  border-style: solid;
+  margin-bottom: 20px;
+}

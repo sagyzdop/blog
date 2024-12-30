@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Personal Statement that took me home, country roads"
-summary: "Story about how we shot a commercial video with grannies."
+excerpt: "Story about how we shot a commercial video with grannies."
 date: 2024-02-22 00:00:00 +0500
 categories: post
 tags:
@@ -13,9 +13,10 @@ tags:
 
 Although it didn't get me to the freedom land, some people asked me to share with my personal statement. As someone who has gone through the college application shenanigans I know firsthand how confusing this stuff can be. So here's a story about me and my friends filming a commercial for our social project.
 
----
 
 # Grannies on the silver screen
+
+---
 
 Although I really do enjoy the "Eureka!" moments of solving a complicated math problem or trying to understand the proof of a particularly subtle theorem, I always have been keener on getting involved in projects where my creativity can be put to use in real life situation rather than in an abstract reality of the mathematics.  
  

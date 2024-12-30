@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sorting Algorithms"
-summary: "My attempt on sorting out the sorts."
+excerpt: "My attempt on sorting out the sorts."
 date: 2024-12-25 00:00:00 +0500
 categories: post
 tags:
