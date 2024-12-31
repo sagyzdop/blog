@@ -14,16 +14,6 @@ tags:
 
 Okay, let’s continue our journey through this existential crisis. Recall the example with Harry Potter and God from the [previous article](../../../2024/10/19/Are-You-Real.html). 
 
-
-**Table of contents**
-
----
-
-* TOC
-{:toc}
-
----
-
 ![Harry Potter and God](../../../../images/Harry_Potter_and_God.png)
 
 > Everything that you can possibly think of – exists, but might not be real.
@@ -33,6 +23,15 @@ The most crucial take from this is that we made the distinction between existing
 Now, what does the reality that is **real for both of us** look like? In other words:
 
 > What are the things that we can agree to include in our realities?
+
+**Table of contents**
+
+---
+
+* TOC
+{:toc}
+
+---
 
 ## Elements of **Common Reality**
 
