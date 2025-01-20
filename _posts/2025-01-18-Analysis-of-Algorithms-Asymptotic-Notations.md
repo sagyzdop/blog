@@ -438,6 +438,8 @@ The following list is sorted from the fastest growing to the slowest growing fun
 
 It is important to understand that the efficiency of an algorithm is inversely proportional to the growth rate, i.e. fast growth is bad and means that program runs slow, and slow growth is good, and program runs fast. The color coding in the picture [here](#connection-between-algorithm-runtime-and-functions) highlights this performance difference.
 
+> As professor Fatih put it – "If your algorithm is performing at $n^{n}$, you should stop and think about what you are doing" 😄
+
 ## Summary
 
 * We use functions to describe algorithm runtime; we use number of steps as a function of input size $n$. (If this sentence is confusing look again [here](#connection-between-algorithm-runtime-and-functions).)
