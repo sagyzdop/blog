@@ -418,6 +418,8 @@ o(g(n)) = \{f(n)\ :\ &\exists\ c > 0,\exists\ n_{0} > 0 \\
 \end{align}
 $$
 
+And it will contain all the functions $f(n)$ that grow slower than $g(n)$.
+
 So if before the function $n^{2}$ was a part of `Big-O` set $O(n^{2})$, as well as a part of any set with functions with higher growth rate as $O(n^{3})$, it is only a part of `little-o` set $o(n^{3})$ and higher. Same thing with the `little-ω`.
 
 Now if you understood all the notations correctly, the fact that **there is no set `little-θ`** should be obvious.
