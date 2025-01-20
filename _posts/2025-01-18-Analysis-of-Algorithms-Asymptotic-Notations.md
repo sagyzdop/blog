@@ -424,7 +424,7 @@ So if before the function $n^{2}$ was a part of `Big-O` set $O(n^{2})$, as well 
 
 Now if you understood all the notations correctly, the fact that **there is no set `little-θ`** should be obvious.
 
-## Growth rate of functions
+## List of Functions by Growth Rate
 
 The following list is sorted from the fastest growing to the slowest growing function.
 
