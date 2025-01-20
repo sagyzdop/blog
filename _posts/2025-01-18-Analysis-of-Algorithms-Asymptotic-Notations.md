@@ -74,7 +74,7 @@ $$
 \text{runtime} \approx f(n)
 $$
 
-Now let's step back a bit and figure out what does these notations really represent. Keep in mind that as it has been said, these are only mathematical tools for describing the **growth rate** of a function. We just represent the runtime/time complexity as a function and use these tools to get an idea about the algorithms' efficiency.
+Now let's step back a bit and figure out what do these notations really represent. Keep in mind that these are only mathematical tools for describing the **growth rate** of a function. We just represent the runtime/time complexity as a function and use these tools to get an idea about the algorithms' efficiency.
 
 ___
 
