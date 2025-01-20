@@ -436,10 +436,10 @@ The following list is sorted from the fastest growing to the slowest growing fun
 8. $f(log(n))$
 9. $f(1)$
 
-It is important to understand that the efficiency of an algorithm is inversely proportional to the growth rate, i.e. fast growth is bad and means that program runs slow, and slow growth is good, and program runs fast. The color coding in the picture [here](#Connection%20between%20Algorithm%20Runtime%20and%20Functions) highlights this performance difference.
+It is important to understand that the efficiency of an algorithm is inversely proportional to the growth rate, i.e. fast growth is bad and means that program runs slow, and slow growth is good, and program runs fast. The color coding in the picture [here](#connection-between-algorithm-runtime-and-functions) highlights this performance difference.
 
 ## Summary
 
-* We use functions to describe algorithm runtime; we use number of steps as a function of input size $n$. (If this sentence is confusing look again [here](#Connection%20between%20Algorithm%20Runtime%20and%20Functions).)
+* We use functions to describe algorithm runtime; we use number of steps as a function of input size $n$. (If this sentence is confusing look again [here](#connection-between-algorithm-runtime-and-functions).)
 * `Big-O`, `Big-Ω` and `Big-Θ` are mathematical tools for describing functions' **growth rate**.
 * A proof for `Big-O` and `Big-Ω` is basically a chain of inequalities that is proved by finding positive constants $c$ and $n_{0}$ that make it work. The choice of these constants is not unique. In fact there can be infinitely many different combinations. It depends on what inequalities you use while finding the upper/lower boundary.
