@@ -2,7 +2,7 @@
 layout: post
 title: "Are You Real?"
 excerpt: "Answers to the questions you could probably do just fine without ever asking."
-date: 2024-10-20 00:00:01 +0500
+date: 2024-10-20 01:01:01 +0500
 categories: longread
 tags:
 - series

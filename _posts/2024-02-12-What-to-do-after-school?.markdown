@@ -2,7 +2,7 @@
 layout: post
 title: "What to do after School? A Conventional Approach"
 excerpt: "Compilation of thoughts on questions that have bothered me and my peers in the last years of school."
-date: 2024-02-12 00:00:01 +0500
+date: 2024-02-12 01:01:01 +0500
 categories: longread
 tags:
 - school

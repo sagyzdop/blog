@@ -2,7 +2,7 @@
 layout: post
 title: "Why Will God Never Die?"
 excerpt: "Or why, I think, Einstein and The Beatles were wrong."
-date: 2024-12-03 00:00:01 +0500
+date: 2024-12-03 01:01:01 +0500
 categories: longread
 tags:
 - series
