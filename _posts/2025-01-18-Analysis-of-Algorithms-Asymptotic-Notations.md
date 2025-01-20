@@ -16,7 +16,7 @@ usemathjax: true
 
 As it turns out algorithms is a course I have to take this semester, and the previous post about [sorting algorithms](../../../2024/12/24/Sorting-Algorithms.html) came in handy. Next step in the topic – asymptotic analysis. These are my notes from the lecture by professor Fatih Demirici. 
 
-> Note that you should have to have basic understanding of set theory to get this material.
+> Note that you should have basic understanding of set theory to get this material.
 
 **Table of contents**
 
