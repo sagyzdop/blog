@@ -274,7 +274,7 @@ Other examples of the functions in $\Omega (n^{2})$ are:
 
 $$
 \begin{align}
-\Theta (g(n)) = \{f(n)\ :\ &\exists\ c_{1} > 0, \exists\ c_{1} > 0, \exists\ n_{0} > 0 \\
+\Theta (g(n)) \ & = \{f(n)\ : \exists\ c_{1} > 0, \exists\ c_{1} > 0, \exists\ n_{0} > 0 \\
 & \text{such that} \\
 & 0 \le c_{1} \times g(n) \le f(n) \le c_{2} \times g(n) \\
 & \forall n \ge n_{0} \}
@@ -285,7 +285,7 @@ Which reads:
 
 > The `Big-Θ` of a given function $\Theta (g(n))$ is a set of all the functions $f(n)$ for which there exists constants $c_{1} > 0, c_{2} > 0$ and $n_{0} > 0$ such that for all $n_{0} \ge 0$ the value of $f(n)$ is bounded below by $c_{1} \times g(n)$ and bounded above by $c_{2} \times g(n)$.
 
-In simple terms, when we say that $f(n) = \Theta g(n))$ it means:
+In simple terms, when we say that $f(n) = \Theta g(n)$ it means:
 
 > $f(n)$ grows at the same rate as $g(n)$.
 
@@ -330,7 +330,7 @@ c_{1} &\le \frac{1}{2} - \frac{2}{n_{0}}
 \end{align}
 $$
 
-Righthand side of this is at most $\frac{1}{2}$. Let's pick $n_{0} = 8$ arbitrarily and find $c_{1}$:
+Right-hand side of this is at most $\frac{1}{2}$. Let's pick $n_{0} = 8$ arbitrarily and find $c_{1}$:
 
 $$
 \begin{align}
@@ -354,7 +354,7 @@ Finally, we got $c_{1} = \frac{1}{4}, c_{2} = \frac{1}{2}$ and $n_{0} = 8$. Subs
 
 $$
 \begin{align}
-\frac{1}{4} \times 8^{2} \le \frac{1}{2} 8^{2} - 2 \times 8 \le \frac{1}{2} \times 8^{2} & \\
+\frac{1}{4} \times 8^{2} \le \frac{1}{2} 8^{2} - 2 \times 8 &\le \frac{1}{2} \times 8^{2} \\
 &16 \le 16 \le 32
 \end{align}
 $$
@@ -363,7 +363,7 @@ and it works for any $n$ greater than $n_{0}$. For example if $n = 10$:
 
 $$
 \begin{align}
-\frac{1}{4} \times 10^{2} \le \frac{1}{2} 10^{2} - 2 \times 10 \le \frac{1}{2} \times 10^{2} & \\
+\frac{1}{4} \times 10^{2} \le \frac{1}{2} 10^{2} - 2 \times 10 &\le \frac{1}{2} \times 10^{2} \\
 &25 \le 30 \le 50&
 \end{align}
 $$
