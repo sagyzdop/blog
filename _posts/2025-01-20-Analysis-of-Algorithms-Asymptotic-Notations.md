@@ -35,9 +35,9 @@ Every algorithm must provide an output, though it may or may not require an inpu
 
 ### What are the asymptotic notations?
 
-Important intuition that I had to get was to understand that the `Big-O`, `Big-Ω` and `Big-Θ` notations actually don't have a direct connection to algorithms or complexities, nor to computer science for that matter. They are rather purely mathematical tools for describing the the **growth rate** of functions.
+Most important thing in learning this for me was to understand that the `Big-O`, `Big-Ω` and `Big-Θ` notations actually don't have a direct connection to algorithms or complexities, nor to computer science for that matter. They are rather purely mathematical tools for describing the the **growth rate** of functions.
 
-So the thing we are measuring here is the growth rate.
+So the thing we are measuring here – is the **growth rate**.
 
 ### Connection between Algorithm Runtime and Functions
 
@@ -56,7 +56,7 @@ $$
 n = \text{input size}
 $$
 
-We define **runtime** as being directly proportional to **number of steps**:
+We define **runtime** as being directly proportional to the **number of steps** (the number of operations it takes to complete the program):
 
 $$
 \text{runtime} \propto \text{number of steps}
@@ -74,11 +74,11 @@ $$
 \text{runtime} \approx f(n)
 $$
 
-Now let's step back a bit and figure out what do these notations really represent. Keep in mind that these are only mathematical tools for describing the **growth rate** of a function. We just represent the runtime/time complexity as a function and use these tools to get an idea about the algorithms' efficiency.
+Now let's step back a bit and figure out what do these notations really represent. Keep in mind that these are only mathematical tools for describing the **growth rate** of a function. We just represent the runtime (time complexity) as a function, and use these tools to get an idea about the algorithms' efficiency.
 
 ___
 
-> Nature of every asymptotic notation is a **set**. So when you think about `Big-O` and its brothers – always imagine a collection of functions.
+> Nature of every asymptotic notation is a **set**. So when you think about `Big-O` and others – always imagine a collection of functions.
 
 ## Big-O Notation (Upper bound)
 
@@ -154,7 +154,7 @@ $$
 2n^{2} = O(n^{3})
 $$
 
-which reads: "Big-O of $2n^{2}$ is $n^{3}$". It is not technically an equality, but it is the convention.
+which reads: "Big-O of $2n^{2}$ is $O(n^{3})$". It is not technically an equality, but it is the convention.
 
 ### Notes
 
@@ -193,7 +193,7 @@ Which reads:
 
 > The `Big-Ω` of a given function $\Omega(g(n))$ is a set of all the functions $f(n)$ for which there exist constants $c > 0$ and $n_{0} > 0$ such that for all $n_{0} \ge 0$ the value of $f(n)$ is bounded below by the $c \times g(n)$.
 
-In simple terms, when we say that $f(n) = \Omega g(n))$ it means:
+In simple terms, when we say that $f(n) = \Omega (g(n))$ it means:
 
 > $f(n)$ grows at least as fast as $g(n)$.
 
@@ -285,7 +285,7 @@ Which reads:
 
 > The `Big-Θ` of a given function $\Theta (g(n))$ is a set of all the functions $f(n)$ for which there exist constants $c_{1} > 0, c_{2} > 0$ and $n_{0} > 0$ such that for all $n_{0} \ge 0$ the value of $f(n)$ is bounded below by $c_{1} \times g(n)$ and bounded above by $c_{2} \times g(n)$.
 
-In simple terms, when we say that $f(n) = \Theta g(n)$ it means:
+In simple terms, when we say that $f(n) = \Theta (g(n))$ it means:
 
 > $f(n)$ grows at the same rate as $g(n)$.
 
