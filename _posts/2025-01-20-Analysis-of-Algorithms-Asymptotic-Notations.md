@@ -95,7 +95,7 @@ $$
 
 Which reads:
 
-> The `Big-O` of a given function $O(g(n))$ is a set of all the functions $f(n)$ for which there exist constants $c > 0$ and $n_{0} > 0$ such that for all $n_{0} \ge 0$ the value of $f(n)$ is bounded above by the $c \times g(n)$.
+> The `Big-O` of a given function $O(g(n))$ is a set of all the functions $f(n)$ for which there exist constants $c > 0$ and $n_{0} > 0$ such that for all $n \ge n_{0}$ the value of $f(n)$ is bounded above by the $c \times g(n)$.
 
 In simple terms, when we say that $f(n) = O(g(n))$ it means:
 
@@ -191,7 +191,7 @@ $$
 
 Which reads:
 
-> The `Big-Ω` of a given function $\Omega(g(n))$ is a set of all the functions $f(n)$ for which there exist constants $c > 0$ and $n_{0} > 0$ such that for all $n_{0} \ge 0$ the value of $f(n)$ is bounded below by the $c \times g(n)$.
+> The `Big-Ω` of a given function $\Omega(g(n))$ is a set of all the functions $f(n)$ for which there exist constants $c > 0$ and $n_{0} > 0$ such that for all $n \ge n_{0}$ the value of $f(n)$ is bounded below by the $c \times g(n)$.
 
 In simple terms, when we say that $f(n) = \Omega (g(n))$ it means:
 
@@ -283,7 +283,7 @@ $$
 
 Which reads:
 
-> The `Big-Θ` of a given function $\Theta (g(n))$ is a set of all the functions $f(n)$ for which there exist constants $c_{1} > 0, c_{2} > 0$ and $n_{0} > 0$ such that for all $n_{0} \ge 0$ the value of $f(n)$ is bounded below by $c_{1} \times g(n)$ and bounded above by $c_{2} \times g(n)$.
+> The `Big-Θ` of a given function $\Theta (g(n))$ is a set of all the functions $f(n)$ for which there exist constants $c_{1} > 0, c_{2} > 0$ and $n_{0} > 0$ such that for all $n \ge n_{0}$ the value of $f(n)$ is bounded below by $c_{1} \times g(n)$ and bounded above by $c_{2} \times g(n)$.
 
 In simple terms, when we say that $f(n) = \Theta (g(n))$ it means:
 
