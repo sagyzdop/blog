@@ -121,7 +121,7 @@ $$
 0 \le 2(n_{0})^{2} \le c \times (n_{0})^{3}
 $$ 
 
-holds. Let's simplify the inequality. Since it is trivially greater than $0$, we can write the following:
+holds. Let's simplify the inequality. Since we consider only positive values, we can write the following:
 
 $$
 \begin{align}
@@ -217,7 +217,7 @@ $$
 0 \le c \times lg(n_{0}) \le \sqrt{n_{0}}
 $$ 
 
-holds. Let's simplify the inequality. Since it is trivially greater than $0$, we can write the following:
+holds. Let's simplify the inequality. Since we consider only positive values, we can write the following:
 
 $$
 c \times lg(n_{0}) \le \sqrt{n_{0}}
@@ -309,7 +309,7 @@ $$
 0 \le c_{1} \times (n_{0})^{2} \le \frac{1}{2} (n_{0})^{2} - 2(n_{0}) \le c_{2} \times (n_{0})^{2}
 $$ 
 
-holds. Let's simplify the inequality and divide it up into two inequalities. Since it is trivially greater than $0$, we can write the following two:
+holds. Let's simplify the inequality and divide it up into two inequalities. Since we consider only positive values, we can write the following two:
 
 $$
 c_{1} \times (n_{0})^{2} \le \frac{1}{2} (n_{0})^{2} - 2(n_{0})
@@ -401,7 +401,7 @@ f(n) \le c \times g(n) &\to c \times f(n) \le g(n)
 \end{align}
 $$
 
-Basically what this means is that they I amply each other. If some function is a lower bound for some other function, the other function is trivially a upper bound for the first one.
+Basically what this means is that they imply each other. If some function is a lower bound for some other function, the other function is trivially an upper bound for the first one.
 
 ## Little-o, Little-ω and Little-θ?
 
