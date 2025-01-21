@@ -605,8 +605,8 @@ def mergeSort(arr):
     mid = len(arr) // 2
     # Middle element is found to divide the array into 2
     
-    leftHalf = arr[:mid]
-    rightHalf = arr[mid:]
+    leftHalf = arr[:mid]    # line 11
+    rightHalf = arr[mid:]   # line 12
     # Recursive call on both sides (left first)
     sortedLeft = mergeSort(leftHalf)
     sortedRight = mergeSort(rightHalf)
@@ -629,8 +629,8 @@ def merge(left, right):
             result.append(right[j])
             j += 1
             
-    result.extend(left[i:])
-    result.extend(right[j:])
+    result.extend(left[i:])     # line 35
+    result.extend(right[j:])    # line 36
     
     return result
 
@@ -642,9 +642,9 @@ print("Sorted:", sortedArr)
 ```
 
 Elaboration:
-- On line 6 `arr[:mid]` takes all values from the array up until, but not including, the value on index `mid`.
-- On line 7 `arr[mid:]` takes all values from the array, starting at the value on index `mid` and all the next values.
-- On lines 26-27 the first part of the merging is done. At this this point either the left sub-array or the right sub-array is empty, so the result array can just be filled with the remaining values from either the left or the right sub-array. These lines can be swapped, and the result will be the same.
+- On line 11 `arr[:mid]` takes all values from the array up until, but not including, the value on index `mid`.
+- On line 12 `arr[mid:]` takes all values from the array, starting at the value on index `mid` and all the next values.
+- On lines 35-36 the first part of the merging is done. At this this point either the left sub-array or the right sub-array is empty, so the result array can just be filled with the remaining values from either the left or the right sub-array. These lines can be swapped, and the result will be the same.
 
 #### Iterative approach
 
