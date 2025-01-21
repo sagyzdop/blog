@@ -26,6 +26,8 @@ Sources I used are [DSA Tutorial from w3schools](https://www.w3schools.com/dsa/i
 
 If you find factual errors in this article, or want to contribute – feel free to propose a change on [github](https://github.com/sagyzdop/blog/blob/main/_posts/2024-12-25-Sorting-Algorithms.markdown?plain=1).
 
+> Look [here](../../../2025/01/19/Analysis-of-Algorithms-Asymptotic-Notations.html) to learn about asymptotic notations.
+
 **Table of contents**
 
 ---
