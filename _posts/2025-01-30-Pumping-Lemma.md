@@ -23,13 +23,16 @@ In formal terms we can write this as:
 
 $$
 % Original Pumping Lemma
-\exists p \in \mathbb{N},\ \forall w \in L\ \text{with } \lvert w\rvert  \geq p,\ \exists x,y,z \in \Sigma^* \ \Bigg( 
+\begin{aligned} 
+&\exists p \in \mathbb{N},\ \forall w \in L\ \text{with } \lvert w\rvert  \geq p,\ \exists x,y,z \in \Sigma^* \\ 
+&\Bigg( 
 \begin{aligned} 
 & \lvert xy \rvert  \leq p \\ 
 & \land\ \lvert y \rvert  > 0 \\ 
 & \land\ \forall i \geq 0\ (xy^i z \in L) 
 \end{aligned} 
 \Bigg)
+\end{aligned} 
 $$
 
 > Lemma guarantees that $xy^{i}z$ is in the language but $x, y, z$ separately are just **arbitrary substrings** of $w$, not necessarily strings in $L$. They are simply strings over the alphabet $\Sigma$, so they belong to $\Sigma^*$.
@@ -50,13 +53,16 @@ but this does **NOT** mean if the language is pumpable it is regular. Pumping Le
 
 $$
 % Negation of Pumping Lemma
-\forall p \in \mathbb{N},\ \exists w \in L\ \text{with } \lvert w\rvert  \geq p,\ \forall x,y,z \in \Sigma^* \ \Bigg( 
+\begin{aligned} 
+&\forall p \in \mathbb{N},\ \exists w \in L\ \text{with } \lvert w\rvert  \geq p,\ \forall x,y,z \in \Sigma^* \\
+&\Bigg( 
 \begin{aligned} 
 & \lvert xy\rvert  \leq p \\ 
 & \land\ \lvert y\rvert  > 0 \\ 
 & \implies \exists i \geq 0\ (xy^i z \notin L) 
 \end{aligned} 
 \Bigg)
+\end{aligned} 
 $$
 
 Which makes proving that a language is irregular a question of finding a word that is in the language, but that is not pumpable.
