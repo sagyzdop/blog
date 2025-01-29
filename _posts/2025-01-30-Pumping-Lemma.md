@@ -75,12 +75,12 @@ Which makes proving that a language is irregular a question of finding a word th
 2. Let $w = a^{p}b^{p}$, which obviously is in $L$.
 3. If we divide up $a^{p}b^{p}$ into $xyz$, where $\lvert xy\rvert  \le p$, and $y$ is **nonempty**, then:
 	1. $x$ and $y$ only contains $a's$
-	2. Since $\lvert y\rvert  \ge 0$ – $y = a^{k}\ \text{and}\ \lvert y\rvert  = k$ for some $1 \le k \le p$
+	2. Since $\lvert y\rvert  \ge 0$, $y = a^{k}\ \text{and}\ \lvert y\rvert  = k$ for some $1 \le k \le p$
 	3. $z$ may contain some $a's$, but contains all the $b's$
 4. Thus, pumping down with $i = 0$:
 	1. Remove $y$ so that $xz = a^{p−k}b^{p}$
 	2. The number of $a's$ become $p − k$, while $b's$ remain $p$.
-	3. Since $k \ge 1$ – $p - k \lt p$.
+	3. Since $k \ge 1$, $p - k \lt p$.
 	4. Thus $a's \neq b's$, therefore $xz \notin L$
 5. And pumping up with $i = 2$:
 	1. Repeat $y$ so that $xy^{2}z = a^{p+k}b^{p}$
