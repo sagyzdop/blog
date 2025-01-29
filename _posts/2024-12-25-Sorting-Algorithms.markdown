@@ -386,6 +386,8 @@ print("Sorted:", data)
 | Space Complexity | $O(log(n))$   |
 | Stability        | No            |
 
+The probability of the worst case happening is astronomically small, so the quicksort's performance is very good. In fact, $O(n*log(n))$ is the lower bound for any comparison based sorting algorithm, meaning it cant get any better than that. However, [merge sort](#merge-sort) has the same performance, and it is the same even the worst case. So why don't we just use the [merge sort](#merge-sort)? In practice quicksort performs 3-4 times faster than [merge sort](#merge-sort). But other than that notice that the quicksort is an in-place algorithm, whereas [merge sort](#merge-sort) requires additional memory to complete the sorting.
+
 ## Counting Sort
 
 ---
