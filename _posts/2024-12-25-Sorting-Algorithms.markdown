@@ -91,7 +91,7 @@ Sorting algorithms can be categorized as follows (note that the list of examples
 | Time Complexity                                                                                                                       | Space Complexity                                                             |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
 | Considers best-case, worst-case, and average-case runtime                                                                             | Considers the amount of auxiliary memory used                                |
-| Faster ($O(n*log(n))$): [Merge Sort](#merge-sort)<br>Slower ($O(n^2)$): [Bubble Sort](#bubble-sort), [Selection Sort](#selection-sort) | Less space: [Quicksort](#quicksort)<br>More space: [Merge Sort](#merge-sort) |
+| Faster ($O(n \times log(n))$): [Merge Sort](#merge-sort)<br>Slower ($O(n^2)$): [Bubble Sort](#bubble-sort), [Selection Sort](#selection-sort) | Less space: [Quicksort](#quicksort)<br>More space: [Merge Sort](#merge-sort) |
 
 
 ## Bubble Sort
@@ -380,13 +380,13 @@ print("Sorted:", data)
 
 | Time Complexity  |               |
 | ---------------- | ------------- |
-| Best             | $O(n*log(n))$ |
+| Best             | $O(n \times log(n))$ |
 | Worst            | $O(n^2)$      |
-| Average          | $O(n*log(n))$ |
+| Average          | $O(n \times log(n))$ |
 | Space Complexity | $O(log(n))$   |
 | Stability        | No            |
 
-The probability of the worst case happening is astronomically small, so the quicksort's performance is very good. In fact, $O(n*log(n))$ is the lower bound for any comparison based sorting algorithm, meaning it cant get any better than that. However, [merge sort](#merge-sort) has the same performance, and it is the same even the worst case. So why don't we just use the [merge sort](#merge-sort)? In practice quicksort performs 3-4 times faster than [merge sort](#merge-sort). But other than that notice that the quicksort is an in-place algorithm, whereas [merge sort](#merge-sort) requires additional memory to complete the sorting.
+The probability of the worst case happening is astronomically small, so the quicksort's performance is very good. In fact, $O(n \times log(n))$ is the lower bound for any comparison based sorting algorithm, meaning it can't get any better than that. However, [merge sort](#merge-sort) has the same performance, and it is the same even the worst case. So why don't we just use the [merge sort](#merge-sort)? In practice quicksort performs 3-4 times faster than [merge sort](#merge-sort). But other than that notice that the quicksort is an in-place algorithm, whereas [merge sort](#merge-sort) requires additional memory to complete the sorting.
 
 ## Counting Sort
 
@@ -556,25 +556,25 @@ print("Sorted:", data)
 | ---------------- | -------- |
 | Best             | $O(n)$   |
 | Worst            | $O(n^2)$ |
-| Average          | $O(n*k)$ |
+| Average          | $O(n \times k)$ |
 | Space Complexity | $O(n+k)$ |
 | Stability        | Yes      |
 
 The time complexity for Radix Sort is:
 
 $$
-O(n*k)
+O(n \times k)
 $$
 
 Here:
 - $n$ is the number of values
 - $k$ the number of digits in the highest value.
 
-A best case scenario for Radix Sort is if there are lots of values to sort, but the values have few digits. For example if there are more than a million values to sort, and the highest value is 999, with just three digits. In such a case the time complexity $O(n*k)$ can be simplified to just $O(n)$.
+A best case scenario for Radix Sort is if there are lots of values to sort, but the values have few digits. For example if there are more than a million values to sort, and the highest value is 999, with just three digits. In such a case the time complexity $O(n \times k)$ can be simplified to just $O(n)$.
 
 A worst case scenario for Radix Sort would be if there are as many digits in the highest value as there are values to sort. This is perhaps not a common scenario, but the time complexity would be $O(n^2)$ in this case.
 
-The most average or common case is perhaps for example if there are million values to sort, and the values have 6 digits. If so, Radix Sort gets time complexity $O(n*log(n))$.
+The most average or common case is perhaps for example if there are million values to sort, and the values have 6 digits. If so, Radix Sort gets time complexity $O(n \times log(n))$.
 
 ## Merge Sort
 
@@ -705,9 +705,9 @@ To put it simply, the while loop inside the mergeSort function uses short step l
 
 | Time Complexity  |               |
 | ---------------- | ------------- |
-| Best             | $O(n*log(n))$ |
-| Worst            | $O(n*log(n))$ |
-| Average          | $O(n*log(n))$ |
+| Best             | $O(n \times log(n))$ |
+| Worst            | $O(n \times log(n))$ |
+| Average          | $O(n \times log(n))$ |
 | Space Complexity | $O(n)$        |
 | Stability        | Yes           |
 
