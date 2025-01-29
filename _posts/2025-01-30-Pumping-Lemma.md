@@ -11,6 +11,8 @@ tags:
 usemathjax: true
 ---
 
+Language that is recognized by a DFA (or NFA, or RegExp) is called a regular language. Some languages would require a DFA with unbounded memory to recognize them, which is not possible. Such languages are **Non-Regular**.
+
 Pumping lemma states that if $L$ is a regular language, then there exists a pumping length $p$ for the language such that for any $w \in L$ where $\lvert w \rvert \ge p$, there is some way we can divide $w$ into parts $x,y,z$ where:
 
 1. $\lvert xy \rvert  \le p$
@@ -89,5 +91,5 @@ Which makes proving that a language is irregular a question of finding a word th
 	4. Thus $a's \neq b's$, therefore $xy^{2}z \notin L$
 6. Therefore, $L$ cannot be pumpable, and thus cannot be regular.
 
-> Note that pumping lemma has no utility for finite languages, since we can pick $p$ greater than the size of the language which makes the lemma vacuously true. Besides, finite a language is regular by definition, since it is possible to construct a DFA (or NFA, or RegExp) that recognizes all the words in it. And since the lemma can be used to only prove non-regularity of a language it is useless in this case.
+> Note that pumping lemma has no utility for finite languages, since we can pick $p$ greater than the size of the language which makes the lemma vacuously true. Besides, a finite language is regular by definition, since it is possible to construct a DFA (or NFA, or RegExp) that recognizes all the words in it. And since the lemma can be used to only prove non-regularity of a language it is useless in this case.
  
