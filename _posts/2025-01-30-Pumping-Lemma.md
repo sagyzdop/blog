@@ -72,7 +72,7 @@ Which makes proving that a language is irregular a question of finding a word th
 1. Suppose $L$ is pumpable with pumping length $p$.
 2. Choose an arbitrary $w \in L$ where $\lvert w\rvert  \ge p$.
 3. If we divide up $w$ into $xyz$, where $\lvert xy\rvert  \le p$, and $y$ is **nonempty**, then:
-	1. *Give facts about the $xy$ and $z$ that you can infer from the language.*
+	- *(Give facts about the $xy$ and $z$ that you can infer from the language.)*
 4. Thus, both when pumping down by removing $y$, and pumping up by repeating $y$ the pumping lemma must still hold.
 5. This means that $xy^{i}z$ should also be in $L$, but it cannot be since it *(give a reason specific to the language)*, so $xy^{i} z \notin L$.
 6. Therefore, $L$ cannot be pumpable, and thus cannot be regular.
@@ -82,19 +82,19 @@ Which makes proving that a language is irregular a question of finding a word th
 1. Suppose $L = \\{a^{n}b^{n}\ \mid\ n \in N\\}$ is pumpable with pumping length $p$.
 2. Let $w = a^{p}b^{p}$, which obviously is in $L$.
 3. If we divide up $a^{p}b^{p}$ into $xyz$, where $\lvert xy\rvert  \le p$, and $y$ is **nonempty**, then:
-	1. $x$ and $y$ only contains $a's$
-	2. Since $\lvert y\rvert  \gt 0$, $y = a^{k}\ \text{and}\ \lvert y\rvert  = k$ for some $1 \le k \le p$
-	3. $z$ may contain some $a's$, but contains all the $b's$
-4. Thus, pumping down with $i = 0$:
-	1. Remove $y$ so that $xz = a^{p−k}b^{p}$
-	2. The number of $a's$ become $p − k$, while $b's$ remain $p$.
-	3. Since $k \ge 1$, $p - k \lt p$.
-	4. Thus $a's \neq b's$, therefore $xz \notin L$
-5. And pumping up with $i = 2$:
-	1. Repeat $y$ so that $xy^{2}z = a^{p+k}b^{p}$
-	2. The number of $a's$ become $p + k$, while $b's$ remain $p$.
-	3. Since $k \ge 1$, $p + k \gt p$.
-	4. Thus $a's \neq b's$, therefore $xy^{2}z \notin L$
+	- $x$ and $y$ only contains $a's$
+	- Since $\lvert y\rvert  \gt 0$, $y = a^{k}\ \text{and}\ \lvert y\rvert  = k$ for some $1 \le k \le p$
+	- $z$ may contain some $a's$, but contains all the $b's$
+4. Thus, **pumping down** with $i = 0$:
+	- Remove $y$ so that $xz = a^{p−k}b^{p}$
+	- The number of $a's$ become $p − k$, while $b's$ remain $p$.
+	- Since $k \ge 1$, $p - k \lt p$.
+	- Thus $a's \neq b's$, therefore $xz \notin L$
+5. And **pumping up** with $i = 2$:
+	- Repeat $y$ so that $xy^{2}z = a^{p+k}b^{p}$
+	- The number of $a's$ become $p + k$, while $b's$ remain $p$.
+	- Since $k \ge 1$, $p + k \gt p$.
+	- Thus $a's \neq b's$, therefore $xy^{2}z \notin L$
 6. Therefore, $L$ cannot be pumpable, and thus cannot be regular.
 
 > Note that pumping lemma has no utility for finite languages, since we can pick $p$ greater than the size of the language which makes the lemma vacuously true. Besides, a finite language is regular by definition, since it is possible to construct a DFA (or NFA, or RegExp) that recognizes all the words in it. And since the lemma can be used to only prove non-regularity of a language it is useless in this case.
