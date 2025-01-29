@@ -97,5 +97,18 @@ Which makes proving that a language is irregular a question of finding a word th
 	- Thus $a's \neq b's$, therefore $xy^{2}z \notin L$
 6. Therefore, $L$ cannot be pumpable, and thus cannot be regular.
 
+### Pumping down with $y^{0}$ nuance
+
+One thing I was confused about when understanding the proof was the pumping down part.
+
+> Isn't it stated in the lemma that $y$ must be non-empty, so how come we remove the $y$ part and claim that language is non-regular?
+
+The Pumping Lemma requires that **for any valid split** $w=xyz$:
+- $y$ has to be non-empty only in the original split.
+- Pumping down ($i=0$) removes $y$, producing $xz$.
+- The lemma guarantees nothing about the _new_ string $xz$ containing $y$; it only requires $xy^{0}z \in L$
+
+So everything checks out. Non-empty $y$ applies only to the word that we choose initially, but pumping down allows us to remove it, and it still has to be in the language.
+
 > Note that pumping lemma has no utility for finite languages, since we can pick $p$ greater than the size of the language which makes the lemma vacuously true. Besides, a finite language is regular by definition, since it is possible to construct a DFA (or NFA, or RegExp) that recognizes all the words in it. And since the lemma can be used to only prove non-regularity of a language it is useless in this case.
  
