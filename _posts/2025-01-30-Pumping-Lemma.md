@@ -11,9 +11,9 @@ tags:
 usemathjax: true
 ---
 
-Language that is recognized by a DFA (or NFA, or RegExp) is called a regular language. Some languages would require a DFA with unbounded memory to recognize them, which is not possible. Such languages are **Non-Regular**.
+A formal language that is recognized by a DFA (or NFA, or RegExp) is called a **Regular** language. Some languages would require a DFA with unbounded memory to recognize them, which is not possible. Such languages are **Non-Regular**.
 
-Pumping lemma states that if $L$ is a regular language, then there exists a pumping length $p$ for the language such that for any $w \in L$ where $\lvert w \rvert \ge p$, there is some way we can divide $w$ into parts $x,y,z$ where:
+**Pumping Lemma** states that if $L$ is a regular language, then there exists a pumping length $p$ for the language such that for any $w \in L$ where $\lvert w \rvert \ge p$, there is some way we can divide $w$ into parts $x,y,z$ where:
 
 1. $\lvert xy \rvert  \le p$
 2. $y\ \text{is not the empty string}$
@@ -49,7 +49,7 @@ $$
 \text{Not Pumpable} \implies \text{Non-Regular}
 $$
 
-But this does **NOT** mean if the language is pumpable it is regular. Pumping Lemma is a tool that can be used to show that some languages are not regular. However, it cannot be used to show that a language is regular. However, we can use the negation of the statement to prove that the language is non-regular. Negating the statement we get:
+But this does **NOT** mean if the language is pumpable – it is regular, i.e. it cannot be used to prove that a language is regular. However, pumping lemma is a tool that can be used to prove that a language is non-regular. We can use the negation of the lemma:
 
 $$
 % Negation of Pumping Lemma
@@ -65,7 +65,7 @@ $$
 \end{aligned} 
 $$
 
-Which makes proving that a language is irregular a question of finding a word that is in the language, but is not pumpable.
+Which makes proving that a language is non-regular a question of finding a word that is in the language, but is not pumpable.
 
 ## Proof Template
 
@@ -103,12 +103,9 @@ One thing I was confused about when understanding the proof was the pumping down
 
 > Isn't it stated in the lemma that $y$ must be non-empty, so how come we remove the $y$ part and claim that language is non-regular?
 
-The Pumping Lemma requires that **for any valid split** $w=xyz$:
-- $y$ has to be non-empty only in the original split.
-- Pumping down ($i=0$) removes $y$, producing $xz$.
-- The lemma guarantees nothing about the _new_ string $xz$ containing $y$; it only requires $xy^{0}z \in L$
+The Pumping Lemma requires that **for any valid split** $w=xyz$ $y$ has to be non-empty **only** in the original split. Pumping down ($i=0$) removes $y$, producing $xz$. The lemma guarantees nothing about the new string $xz$ containing $y$; it only requires $xy^{0}z \in L$. So everything checks out. Non-empty $y$ applies only to the word that we choose initially, but pumping down allows us to remove it, and it still has to be in the language.
 
-So everything checks out. Non-empty $y$ applies only to the word that we choose initially, but pumping down allows us to remove it, and it still has to be in the language.
+---
 
 > Note that pumping lemma has no utility for finite languages, since we can pick $p$ greater than the size of the language which makes the lemma vacuously true. Besides, a finite language is regular by definition, since it is possible to construct a DFA (or NFA, or RegExp) that recognizes all the words in it. And since the lemma can be used to only prove non-regularity of a language it is useless in this case.
  
