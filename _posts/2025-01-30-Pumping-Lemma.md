@@ -65,7 +65,7 @@ $$
 \end{aligned} 
 $$
 
-Which makes proving that a language is irregular a question of finding a word that is in the language, but that is not pumpable.
+Which makes proving that a language is irregular a question of finding a word that is in the language, but is not pumpable.
 
 ## Proof Template
 
