@@ -15,9 +15,9 @@ Pumping lemma states that if $L$ is a regular language, then there exists a pump
 
 1. $\lvert xy \rvert  \le p$
 2. $y\ \text{is not the empty string}$
-3. $xy^{i}z \in L, \text{for all}\ i \in \{0, 1, 2, \dots \}$
+3. $xy^{i}z \in L, \text{for all}\ i \in \\{0, 1, 2, \dots \\}$
 
-In formal terms we can write this as :
+In formal terms we can write this as:
 
 $$
 % Original Pumping Lemma
@@ -69,22 +69,22 @@ Which makes proving that a language is irregular a question of finding a word th
 5. This means that $xy^{i}z$ should also be in $L$, but it cannot be since it *(give a reason specific to the language)*, so $xy^{i} z \notin L$.
 6. Therefore, $L$ cannot be pumpable, and thus cannot be regular.
 
-## Example Proof:  $\{a^{n} b^{n}\}$
+## Example Proof: $L = \\{a^{n} b^{n}\\}$
 
-1. Suppose $L = \{a^{n}b^{n}\ \mid\ n \in N\}$ is pumpable with pumping length $p$.
+1. Suppose $L = \\{a^{n}b^{n}\ \mid\ n \in N\\}$ is pumpable with pumping length $p$.
 2. Let $w = a^{p}b^{p}$, which obviously is in $L$.
 3. If we divide up $a^{p}b^{p}$ into $xyz$, where $\lvert xy\rvert  \le p$, and $y$ is **nonempty**, then:
 	1. $x$ and $y$ only contains $a's$
-	2. Since $\lvert y\rvert  \ge 0$, $y = a^{k}\ \text{and}\ \lvert y\rvert  = k$ for some $1 \le k \le p$
+	2. Since $\lvert y\rvert  \ge 0$ – $y = a^{k}\ \text{and}\ \lvert y\rvert  = k$ for some $1 \le k \le p$
 	3. $z$ may contain some $a's$, but contains all the $b's$
 4. Thus, pumping down with $i = 0$:
-	1. Remove $y$: $xz = a^{p−k}b^{p}$
-	2. The number of $a's$ becomes $p − k$, while $b's$ remain $p$.
-	3. Since $k \ge 1$, $p - k \lt p$.
+	1. Remove $y$ so that $xz = a^{p−k}b^{p}$
+	2. The number of $a's$ become $p − k$, while $b's$ remain $p$.
+	3. Since $k \ge 1$ – $p - k \lt p$.
 	4. Thus $a's \neq b's$, therefore $xz \notin L$
 5. And pumping up with $i = 2$:
-	1. Repeat $y$: $xy^{2}z = a^{p+k}b^{p}$
-	2. The number of $a's$ becomes $p + k$, while $b's$ remain $p$.
+	1. Repeat $y$ so that $xy^{2}z = a^{p+k}b^{p}$
+	2. The number of $a's$ become $p + k$, while $b's$ remain $p$.
 	3. Since $k \ge 1$, $p + k \gt p$.
 	4. Thus $a's \neq b's$, therefore $xy^{2}z \notin L$
 6. Therefore, $L$ cannot be pumpable, and thus cannot be regular.
