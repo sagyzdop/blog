@@ -30,7 +30,7 @@ $$
 \Bigg)
 $$
 
-> Lemma guarantees that $xy^{i}z$ is in the language but $x, y, z$ are just **arbitrary substrings** of $w$, not necessarily strings in $L$. They are simply strings over the alphabet $\Sigma$, so they belong to $\Sigma^*$.
+> Lemma guarantees that $xy^{i}z$ is in the language but $x, y, z$ separately are just **arbitrary substrings** of $w$, not necessarily strings in $L$. They are simply strings over the alphabet $\Sigma$, so they belong to $\Sigma^*$.
 
 The Pumping Lemma says that:
 
