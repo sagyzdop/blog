@@ -11,9 +11,9 @@ tags:
 usemathjax: true
 ---
 
-Pumping lemma states that if $L$ is a regular language, then there exists a pumping length $p$ for the language such that for any $w \in L$ where $|w| \ge p$, there is some way we can divide $w$ into parts $x,y,z$ where:
+Pumping lemma states that if $L$ is a regular language, then there exists a pumping length $p$ for the language such that for any $w \in L$ where $\lvert w \rvert \ge p$, there is some way we can divide $w$ into parts $x,y,z$ where:
 
-1. $|xy| \le p$
+1. $\lvert xy \rvert  \le p$
 2. $y\ \text{is not the empty string}$
 3. $xy^{i}z \in L, \text{for all}\ i \in \{0, 1, 2, \dots \}$
 
@@ -21,10 +21,10 @@ In formal terms we can write this as :
 
 $$
 % Original Pumping Lemma
-\exists p \in \mathbb{N},\ \forall w \in L\ \text{with } |w| \geq p,\ \exists x,y,z \in \Sigma^* \ \Bigg( 
+\exists p \in \mathbb{N},\ \forall w \in L\ \text{with } \lvert w\rvert  \geq p,\ \exists x,y,z \in \Sigma^* \ \Bigg( 
 \begin{aligned} 
-& |xy| \leq p \\ 
-& \land\ |y| > 0 \\ 
+& \lvert xy \rvert  \leq p \\ 
+& \land\ \lvert y \rvert  > 0 \\ 
 & \land\ \forall i \geq 0\ (xy^i z \in L) 
 \end{aligned} 
 \Bigg)
@@ -48,10 +48,10 @@ but this does **NOT** mean if the language is pumpable it is regular. Pumping Le
 
 $$
 % Negation of Pumping Lemma
-\forall p \in \mathbb{N},\ \exists w \in L\ \text{with } |w| \geq p,\ \forall x,y,z \in \Sigma^* \ \Bigg( 
+\forall p \in \mathbb{N},\ \exists w \in L\ \text{with } \lvert w\rvert  \geq p,\ \forall x,y,z \in \Sigma^* \ \Bigg( 
 \begin{aligned} 
-& |xy| \leq p \\ 
-& \land\ |y| > 0 \\ 
+& \lvert xy\rvert  \leq p \\ 
+& \land\ \lvert y\rvert  > 0 \\ 
 & \implies \exists i \geq 0\ (xy^i z \notin L) 
 \end{aligned} 
 \Bigg)
@@ -62,8 +62,8 @@ Which makes proving that a language is irregular a question of finding a word th
 ## Proof Template
 
 1. Suppose $L$ is pumpable with pumping length $p$.
-2. Choose an arbitrary $w \in L$ where $|w| \ge p$.
-3. If we divide up $w$ into $xyz$, where $|xy| \le p$, and $y$ is **nonempty**, then:
+2. Choose an arbitrary $w \in L$ where $\lvert w\rvert  \ge p$.
+3. If we divide up $w$ into $xyz$, where $\lvert xy\rvert  \le p$, and $y$ is **nonempty**, then:
 	1. *Give facts about the $xy$ and $z$ that you can infer from the language.*
 4. Thus, both when pumping down by removing $y$, and pumping up by repeating $y$ the pumping lemma must still hold.
 5. This means that $xy^{i}z$ should also be in $L$, but it cannot be since it *(give a reason specific to the language)*, so $xy^{i} z \notin L$.
@@ -71,11 +71,11 @@ Which makes proving that a language is irregular a question of finding a word th
 
 ## Example Proof:  $\{a^{n} b^{n}\}$
 
-1. Suppose $L = \{a^{n}b^{n}\ |\ n \in N\}$ is pumpable with pumping length $p$.
+1. Suppose $L = \{a^{n}b^{n}\ \mid\ n \in N\}$ is pumpable with pumping length $p$.
 2. Let $w = a^{p}b^{p}$, which obviously is in $L$.
-3. If we divide up $a^{p}b^{p}$ into $xyz$, where $|xy| \le p$, and $y$ is **nonempty**, then:
+3. If we divide up $a^{p}b^{p}$ into $xyz$, where $\lvert xy\rvert  \le p$, and $y$ is **nonempty**, then:
 	1. $x$ and $y$ only contains $a's$
-	2. Since $|y| \ge 0$, $y = a^{k}\ \text{and}\ |y| = k$ for some $1 \le k \le p$
+	2. Since $\lvert y\rvert  \ge 0$, $y = a^{k}\ \text{and}\ \lvert y\rvert  = k$ for some $1 \le k \le p$
 	3. $z$ may contain some $a's$, but contains all the $b's$
 4. Thus, pumping down with $i = 0$:
 	1. Remove $y$: $xz = a^{p−k}b^{p}$
