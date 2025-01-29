@@ -49,7 +49,7 @@ $$
 \text{Not Pumpable} \implies \text{Non-Regular}
 $$
 
-but this does **NOT** mean if the language is pumpable it is regular. Pumping Lemma is a tool that can be used to show that some languages are not regular. However, it cannot be used to show that a language is regular. However, we can use the negation of the statement to prove that the language is non-regular. Negating the statement we get:
+But this does **NOT** mean if the language is pumpable it is regular. Pumping Lemma is a tool that can be used to show that some languages are not regular. However, it cannot be used to show that a language is regular. However, we can use the negation of the statement to prove that the language is non-regular. Negating the statement we get:
 
 $$
 % Negation of Pumping Lemma
