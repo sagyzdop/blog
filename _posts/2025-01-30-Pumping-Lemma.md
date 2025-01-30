@@ -103,7 +103,7 @@ One thing I was confused about when understanding the proof was the pumping down
 
 > Isn't it stated in the lemma that $y$ must be non-empty, so how come we remove the $y$ part and claim that language is non-regular?
 
-The Pumping Lemma requires that **for any valid split** $w=xyz$ $y$ has to be non-empty **only** in the original split. Pumping down ($i=0$) removes $y$, producing $xz$. The lemma guarantees nothing about the new string $xz$ containing $y$; it only requires $xy^{0}z \in L$. So everything checks out. Non-empty $y$ applies only to the word that we choose initially, but pumping down allows us to remove it, and it still has to be in the language.
+The Pumping Lemma requires that **for any valid $w=xyz$ split** $y$ has to be non-empty **only in the original split**. Pumping down ($i=0$) removes $y$, producing $xz$. The lemma guarantees nothing about the new string $xz$ containing $y$; it only requires $xy^{0}z \in L$. So everything checks out. Non-empty $y$ applies only to the word that we choose initially, but pumping down allows us to remove it, and it still has to be in the language.
 
 ---
 
