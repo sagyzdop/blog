@@ -82,8 +82,8 @@ Which makes proving that a language is non-regular a question of finding a word 
 1. Suppose $L = \\{a^{n}b^{n}\ \mid\ n \in N\\}$ is pumpable with pumping length $p$.
 2. Let $w = a^{p}b^{p}$, which obviously is in $L$.
 3. If we divide up $a^{p}b^{p}$ into $xyz$, where $\lvert xy\rvert  \le p$, and $y$ is **nonempty**, then:
-	- $x$ and $y$ only contain $a's$ *(stop and think why is this, because I figured that this is the most crucial fact in understanding why this works)*
-	- Since $\lvert y\rvert  \gt 0$, $y = a^{k}\ \text{and}\ \lvert y\rvert  = k$ for some $1 \le k \le p$ *(basically, $k$ is the number of $a's$ in $y)*
+	- **$x$ and $y$ only contain $a's$** *(stop and think why is this true, because I figured that this is the most crucial fact in understanding why this works)*
+	- Since $\lvert y\rvert  \gt 0$, $y = a^{k}\ \text{and}\ \lvert y\rvert  = k$ for some $1 \le k \le p$ *(basically, $k$ is the number of $a's$ in $y$)*
 	- $z$ may contain some $a's$, but contains all the $b's$
 4. Thus, **pumping down** with $i = 0$:
 	- **Remove** $y$ so that $xz = a^{p−k}b^{p}$
