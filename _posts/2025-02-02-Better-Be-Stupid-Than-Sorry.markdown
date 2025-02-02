@@ -141,7 +141,7 @@ We can define a relationship as an act of mutual fulfillment of needs because if
 
 That sounds overly egoistic and materialistic. In a good relationship, we don't usually actively think about what the other party can give us in return, do we? What about unconditional love? (Ignoring the fact that "love" is even more problematic.)
 
-Maybe we can rephrase the question a bit to make it sound a bit less depreciating. What if we appeal to hedonism and say that the thing all rational people should like is – **happiness**? Then we could take:
+Maybe we can rephrase the question a bit to make it sound less depreciating. What if we appeal to hedonism and say that the thing all rational people should like is – **happiness**? Then we could take:
 
 > Approach #2 (Hedonistic Version): Connect with people who make you happy, disconnect with ones who make you unhappy.
 
