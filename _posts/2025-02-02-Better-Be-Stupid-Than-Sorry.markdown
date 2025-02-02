@@ -51,7 +51,7 @@ Second, you become more forgiving in a relationship. You kinda have to since eve
 
 > Maybe the reason why confronting your family is so hard is because it is literally going against nature.
 
- But what is the problem with forgiving?
+But what is the problem with forgiving?
 
 It becomes a problem if people in your family are really bad people, or they do something really wrong. I think it is fair to assume that if you are born and raised in a very conservative family the chances of you being conservative are on average higher than if you are from a gay family from California. Since your parents set the example for the "right way" you can't really break free of your nurture. Moreover, I can imagine a scenario where I would defend my brother even if he killed someone. That is not rational.
 
