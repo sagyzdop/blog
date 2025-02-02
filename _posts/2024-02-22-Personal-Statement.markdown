@@ -14,7 +14,7 @@ tags:
 Although it didn't get me to the freedom land, some people asked me to share with my personal statement. As someone who has gone through the college application shenanigans I know firsthand how confusing this stuff can be. So here's a story about me and my friends filming a commercial for our social project.
 
 
-# Grannies on the silver screen
+## Grannies on the silver screen
 
 ---
 

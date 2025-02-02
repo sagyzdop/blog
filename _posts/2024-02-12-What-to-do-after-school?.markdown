@@ -42,7 +42,7 @@ Also, remember that all of this discussion is from the perspective of a young pe
 
 ---
 
-# Answer the question "Why?"
+## Answer the question "Why?"
 
 The very first thing you need to do is to determine:
 
@@ -66,7 +66,7 @@ And because I defined that for it to be considered honest – it has to benefit 
 
 So, you are doing all this because it benefits you, because you like it, and because you want to live a meaningful and comfortable life.
 
-# Why do you need college?
+## Why do you need college?
 
 Mostafa said:
 
@@ -74,7 +74,7 @@ Mostafa said:
 
 Indeed, this is very true and it raises a reasonable question: "Why spend several years of my life on something that I won't be needing anyway?". [^professions] That's a hard question to answer, and to make it easier, and to justify going to college for myself I had to break it down.
 
-## Why do you need the knowledge?
+### Why do you need the knowledge?
 
 Well, my perspective on this has always been that any kind of knowledge develops your understanding of the world, and any information alters your perspective on certain situations. If you are capable of correctly using them to your own advantage, they give you the confidence to make decisions, and hence, bring you control over your life.
 
@@ -94,7 +94,7 @@ So to sum up:
 
 > Knowledge is your mitochondria, your reliable multi-tool, and your ultimate protection against bullshit.
 
-## Why do you need to learn?
+### Why do you need to learn?
 
 Now that the value of knowledge itself is defined, the motivation to learn should be clear.
 
@@ -106,13 +106,13 @@ Of course, the current education system is flawed in many ways, one of which is 
 
 You begin specializing only in the final years of college by taking specific courses that you want to study; everything else is general, so choose your specialization wisely. If you know what you want to do early on – good for you, go ahead and do it! But if you don't – don't rush and take your time to explore what is out there for you.
 
-## People
+### People
 
 Imagine living in an environment of intelligent, energetic, highly motivated, brave and bright people. Imagine having the opportunity to do whatever you want within this community. Imagine going out there and making friends with these people and doing whatever you want together! Wild.
 
 So, the motivation in going to college is to acquire knowledge, develop skills, and meet people.
 
-# Why do you need a job?
+## Why do you need a job?
 
 Well, that should be a fairly simple question to answer. It is because of *the industrial revolution and its consequences that has been a disaster for the human race*. It could be approached in the same manner:
 
@@ -128,7 +128,7 @@ And that could be something like:
 
 Notice how when formulated like this, monetary gain is not the sole motivation to work, and I think that is very significant. While acknowledging its importance – the focus is not on the money – but on yourself.
 
-## Job as a relationship
+### Job as a relationship
 
 A really useful insight that Mostafa brought up was that a job is essentially a relationship between an employer and an employee. To be satisfied at your job, you have to make sure that these two things match:
 
@@ -141,7 +141,7 @@ If these requirements are satisfied, you have found a perfect job for yourself o
 
 Moreover, this perspective of work as a "relationship" proves that you don’t have to be exceptional to get a job. When hiring, an employer cares more about your personal qualities than your background. Your skill set (ability to learn, communicate, etc., as discussed earlier) and your passion are your safety net. You will be able to apply your skills wherever you end up being, and make up for whatever is missing on the actual job. Your ability to learn, your desire to explore and contribute will lead you through this and will get you money. AND if you are motivated and passionate enough – you will always want to make a contribution to the field in which you are working and to the quality of life of the people.
 
-# Making a choice and Opportunity cost
+## Making a choice and Opportunity cost
 
 Finally, addressing my initial worries about making a choice, Mostafa gave some reassuring advice, and I think this is the most important part of this conversation.
 
@@ -157,7 +157,7 @@ With all that said, one thing cannot be sacrificed – people. Be careful when m
 
 ---
 
-# P.S.
+## P.S.
 
 I doubt the liberal idea of:
 
