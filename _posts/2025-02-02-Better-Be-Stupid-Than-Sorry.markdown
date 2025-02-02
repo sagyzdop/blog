@@ -55,7 +55,7 @@ But what is the problem with forgiving?
 
 It becomes a problem if people in your family are really bad people, or they do something really wrong. I think it is fair to assume that if you are born and raised in a very conservative family the chances of you being conservative are on average higher than if you are from a gay family from California. Since your parents set the example for the "right way" you can't really break free of your nurture. Moreover, I can imagine a scenario where I would defend my brother even if he killed someone. That is not rational.
 
-And when we generalize this to all the relationships we have, the problem becomes clearer. This might be one of the reasons people get stuck in toxic relationships (again, not only romantic). Even if there is a clear reason to end people still find a way to forgive. Another example from a workplace environment: as a worker, it is better for you if your boss likes you. As an employer, someone you like will seem to be better at their job than someone you don't. Call it nepotism or networking, it is what it is.
+And when we generalize this to all the relationships we have, the problem becomes clearer. This might be one of the reasons people get stuck in toxic relationships (again, not only romantic). Even when there is a clear reason to end a relationship people still find a way to forgive. Another example from a workplace environment: as a worker, it is better for you if your boss likes you. As an employer, someone you like will seem to be better at their job than someone you don't. Call it nepotism or networking, it is what it is.
 
 The thing that was designed by evolution to help us connect becomes destructive if logic and reason are biased.
 
