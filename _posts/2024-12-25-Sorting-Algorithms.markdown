@@ -727,7 +727,7 @@ Merge sort is stable because if there is duplicates, the ones that come earlier 
 
 There are bunch of important concepts you need to know to understand how heap sort works, so I would advise to watch this video from the legend from start to end:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HqPJF2L5h9U?si=LBO0uSJcJZ--UhME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="auto" src="https://www.youtube.com/embed/HqPJF2L5h9U?si=LBO0uSJcJZ--UhME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Actually, watching the whole [playlist](https://youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&feature=shared) wouldn't hurt.
 
