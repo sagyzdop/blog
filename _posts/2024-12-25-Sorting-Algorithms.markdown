@@ -733,9 +733,7 @@ Actually, watching the whole [playlist](https://youtube.com/playlist?list=PLDN4r
 
 ### Characteristics
 
-| Time Complexity (with Heapify) | $O(n)$ |
-| ------------------------------ | ------ |
-
+Time Complexity (with Heapify) of Heap Sort is $O(n)$
 
 ## Linear Search
 
