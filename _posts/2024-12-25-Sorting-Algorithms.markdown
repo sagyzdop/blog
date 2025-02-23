@@ -149,7 +149,7 @@ print("Sorted:", data)
 | Worst            | $O(n^2)$ |
 | Average          | $O(n^2)$ |
 | Space Complexity | $O(1)$   |
-| Stability        | Yes      |
+| **Stability**        | Yes      |
 
 The best case for Bubble Sort is $O(n)$ because of the trick with `swapped` flag. If the array is already sorted the algorithm only has to perform $n$ number of comparisons.
 
@@ -201,7 +201,7 @@ print('Sorted:', data)
 | Worst            | $O(n^2)$ |
 | Average          | $O(n^2)$ |
 | Space Complexity | $O(1)$   |
-| Stability        | Yes      |
+| **Stability**        | Yes      |
 
 The most significant difference from [Bubble Sort](#bubble-sort) that we can notice in this simulation is that best and worst case is actually almost the same for Selection Sort – $O(n^2)$, but for [Bubble Sort](#bubble-sort) the best case runtime is only $O(n)$. Why is that?It is because Selection Sort compares each element with all the elements for if it is the smallest, no matter if the array is sorted or not.
 
@@ -292,7 +292,7 @@ data = [1, 4, 5, 9, 3] # j + 1 = 1, array[1] = 4
 | Worst            | $O(n^2)$ |
 | Average          | $O(n^2)$ |
 | Space Complexity | $O(1)$   |
-| Stability        | Yes      |
+| **Stability**        | Yes      |
 
 ## Quicksort
 
@@ -384,7 +384,7 @@ print("Sorted:", data)
 | Worst            | $O(n^2)$                  |
 | Average          | $O(n \times log(n))$      |
 | Space Complexity | $O(log(n))$ to $O(n^{2})$ |
-| Stability        | No                        |
+| **Stability**        | No                        |
 
 The probability of the worst case happening is astronomically small, so the quicksort's performance is very good. In fact, $O(n \times log(n))$ is the lower bound for any comparison based sorting algorithm, meaning it can't get any better than that. However, [merge sort](#merge-sort) has the same performance, and it is the same even the worst case. So why don't we just use the [merge sort](#merge-sort)? In practice quicksort performs 3-4 times faster than [merge sort](#merge-sort). But other than that notice that the quicksort is an in-place algorithm, whereas [merge sort](#merge-sort) requires additional memory to complete the sorting.
 
@@ -464,7 +464,7 @@ To get this more clearly:
 | Worst            | $O(n^2)$ |
 | Average          | $O(n+k)$ |
 | Space Complexity | $O(k)$   |
-| Stability        | Yes      |
+| **Stability**        | Yes      |
 
 Here:
 - $n$ is the number of values
@@ -558,7 +558,7 @@ print("Sorted:", data)
 | Worst            | $O(n^2)$        |
 | Average          | $O(n \times k)$ |
 | Space Complexity | $O(n+k)$        |
-| Stability        | Yes             |
+| **Stability**        | Yes             |
 
 The time complexity for Radix Sort is:
 
@@ -709,7 +709,7 @@ To put it simply, the while loop inside the mergeSort function uses short step l
 | Worst            | $O(n \times log(n))$                                             |
 | Average          | $O(n \times log(n))$                                             |
 | Space Complexity | $O(n)$ if sorting an array, $O(log(n))$ if sorting a linked list |
-| Stability        | Yes                                                              |
+| **Stability**        | Yes                                                              |
 
 The time complexity of the Merge Sort is the same across the board because the algorithm divides and merges no matter if the input array is sorted or not.
 
@@ -735,7 +735,11 @@ Actually, watching the whole [playlist](https://youtube.com/playlist?list=PLDN4r
 
 ### Characteristics
 
-**Time Complexity of Heap Sort (with Heapify) is** $O(n)$.
+Time Complexity of Heap Sort (with Heapify) is:
+
+$$
+O(n \times log(n))
+$$
 
 ## Linear Search
 
