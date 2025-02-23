@@ -735,7 +735,10 @@ Actually, watching the whole [playlist](https://youtube.com/playlist?list=PLDN4r
 
 ### Characteristics
 
-Time Complexity of Heap Sort (with Heapify) is $O(n)$
+| Time Complexity (with Heapify) | $O(n)$ |
+| ------------------------------ | ------ |
+
+Time Complexity of Heap Sort  is 
 
 ## Linear Search
 
