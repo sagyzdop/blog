@@ -39,7 +39,7 @@ If you find factual errors in this article, or want to contribute – feel free 
 
 ---
 
-Sorting algorithms can be categorized as follows (note that the list of examples in the tables are just the ones present in this article, there are more examples of algorithms you can put there that are not mentioned, like [Heap Sort](https://www.programiz.com/dsa/heap-sort)): 
+Sorting algorithms can be categorized as follows (note that the list of examples in the tables are just the ones present in this article, there are more examples of algorithms you can put there that are not mentioned): 
 
 ### Data Location (RAM vs. Disk)
 
@@ -88,9 +88,9 @@ Sorting algorithms can be categorized as follows (note that the list of examples
 
 > Look in the **Characteristics** of each algorithm for more detail.
 
-| Time Complexity                                                                                                                       | Space Complexity                                                             |
-| ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| Considers best-case, worst-case, and average-case runtime                                                                             | Considers the amount of auxiliary memory used                                |
+| Time Complexity                                                                                                                               | Space Complexity                                                             |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| Considers best-case, worst-case, and average-case runtime                                                                                     | Considers the amount of auxiliary memory used                                |
 | Faster ($O(n \times log(n))$): [Merge Sort](#merge-sort)<br>Slower ($O(n^2)$): [Bubble Sort](#bubble-sort), [Selection Sort](#selection-sort) | Less space: [Quicksort](#quicksort)<br>More space: [Merge Sort](#merge-sort) |
 
 
@@ -378,13 +378,13 @@ print("Sorted:", data)
 
 ### Characteristics
 
-| Time Complexity  |               |
-| ---------------- | ------------- |
-| Best             | $O(n \times log(n))$ |
-| Worst            | $O(n^2)$      |
-| Average          | $O(n \times log(n))$ |
-| Space Complexity | $O(log(n))$   |
-| Stability        | No            |
+| Time Complexity  |                           |
+| ---------------- | ------------------------- |
+| Best             | $O(n \times log(n))$      |
+| Worst            | $O(n^2)$                  |
+| Average          | $O(n \times log(n))$      |
+| Space Complexity | $O(log(n))$ to $O(n^{2})$ |
+| Stability        | No                        |
 
 The probability of the worst case happening is astronomically small, so the quicksort's performance is very good. In fact, $O(n \times log(n))$ is the lower bound for any comparison based sorting algorithm, meaning it can't get any better than that. However, [merge sort](#merge-sort) has the same performance, and it is the same even the worst case. So why don't we just use the [merge sort](#merge-sort)? In practice quicksort performs 3-4 times faster than [merge sort](#merge-sort). But other than that notice that the quicksort is an in-place algorithm, whereas [merge sort](#merge-sort) requires additional memory to complete the sorting.
 
@@ -552,13 +552,13 @@ print("Sorted:", data)
 
 ### Characteristics
 
-| Time Complexity  |          |
-| ---------------- | -------- |
-| Best             | $O(n)$   |
-| Worst            | $O(n^2)$ |
+| Time Complexity  |                 |
+| ---------------- | --------------- |
+| Best             | $O(n)$          |
+| Worst            | $O(n^2)$        |
 | Average          | $O(n \times k)$ |
-| Space Complexity | $O(n+k)$ |
-| Stability        | Yes      |
+| Space Complexity | $O(n+k)$        |
+| Stability        | Yes             |
 
 The time complexity for Radix Sort is:
 
@@ -703,19 +703,38 @@ To put it simply, the while loop inside the mergeSort function uses short step l
 
 ### Characteristics
 
-| Time Complexity  |               |
-| ---------------- | ------------- |
+| Time Complexity  |                      |
+| ---------------- | -------------------- |
 | Best             | $O(n \times log(n))$ |
 | Worst            | $O(n \times log(n))$ |
 | Average          | $O(n \times log(n))$ |
-| Space Complexity | $O(n)$        |
-| Stability        | Yes           |
+| Space Complexity | $O(n)$               |
+| Stability        | Yes                  |
 
 The time complexity of the Merge Sort is the same across the board because the algorithm divides and merges no matter if the input array is sorted or not.
 
 While merging two arrays, we require an auxiliary space to temporarily store the merged array, before we plug this partially sorted array into the main array. Hence space complexity of Merge Sort is $O(n)$, as we require an auxiliary array as big as the main input array.
 
 Merge sort is stable because if there is duplicates, the ones that come earlier in the array stay on the left and ones that come later in the array stay on the right. Their relative positions are preserved in the merging stage.
+
+## Heap Sort
+
+---
+
+### How it works
+
+There are bunch of important concepts you need to know to understand how heap sort works, so I would advise to watch this video from the legend from start to end:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HqPJF2L5h9U?si=LBO0uSJcJZ--UhME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Actually, watching the whole [playlist](https://youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&feature=shared) wouldn't hurt.
+
+### Characteristics
+
+| Time Complexity |                      |
+| --------------- | -------------------- |
+| Classic         | $O(n \times log(n))$ |
+| With Heapify    | $O(n)$               |
 
 ## Linear Search
 
@@ -771,6 +790,8 @@ Binary Search is much faster than Linear Search, but requires a **sorted** array
 
 ### Code
 
+#### Iterative approach
+
 ```python
 def binarySearch(arr, targetVal):
     left = 0
@@ -803,9 +824,11 @@ else:
 
 ### Characteristics
 
-| Time Complexity  | $O(log_2(n))$ |
-| ---------------- | ------------- |
-| Space Complexity | $O(1)$        |
+| Time Complexity  |                      |
+| ---------------- | -------------------- |
+| Best             | $O(1)$               |
+| Worst            | $O(n \times log(n))$ |
+| Average          | $O(n \times log(n))$ |
+| Space Complexity | $O(1)$               |
 
 When writing time complexity using Big-O notation we could also just have written $O(log(n))$, but $O(log_2(n))$ reminds us that the array search area is halved for every new comparison, which is the basic concept of Binary Search, so we will just keep the base 2 indication in this case.
-
