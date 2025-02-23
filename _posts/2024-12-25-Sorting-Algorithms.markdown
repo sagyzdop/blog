@@ -644,8 +644,8 @@ print("Sorted:", sortedArr)
 ```
 
 Elaboration:
-- On line 11 `arr[:mid]` takes all values from the array up until, but not including, the value on index `mid`.
-- On line 12 `arr[mid:]` takes all values from the array, starting at the value on index `mid` and all the next values.
+- On line 35 `arr[:mid]` takes all values from the array up until, but not including, the value on index `mid`.
+- On line 36 `arr[mid:]` takes all values from the array, starting at the value on index `mid` and all the next values.
 - On lines 35-36 the first part of the merging is done. At this this point either the left sub-array or the right sub-array is empty, so the result array can just be filled with the remaining values from either the left or the right sub-array. These lines can be swapped, and the result will be the same.
 
 #### Iterative approach
@@ -703,17 +703,19 @@ To put it simply, the while loop inside the mergeSort function uses short step l
 
 ### Characteristics
 
-| Time Complexity  |                      |
-| ---------------- | -------------------- |
-| Best             | $O(n \times log(n))$ |
-| Worst            | $O(n \times log(n))$ |
-| Average          | $O(n \times log(n))$ |
-| Space Complexity | $O(n)$               |
-| Stability        | Yes                  |
+| Time Complexity  |                                                                  |
+| ---------------- | ---------------------------------------------------------------- |
+| Best             | $O(n \times log(n))$                                             |
+| Worst            | $O(n \times log(n))$                                             |
+| Average          | $O(n \times log(n))$                                             |
+| Space Complexity | $O(n)$ if sorting an array, $O(log(n))$ if sorting a linked list |
+| Stability        | Yes                                                              |
 
 The time complexity of the Merge Sort is the same across the board because the algorithm divides and merges no matter if the input array is sorted or not.
 
 While merging two arrays, we require an auxiliary space to temporarily store the merged array, before we plug this partially sorted array into the main array. Hence space complexity of Merge Sort is $O(n)$, as we require an auxiliary array as big as the main input array.
+
+But if we are sorting a linked list, merging can be done with just reassigning the links. Hence, because the algorithm is recursive and it requires $O(log(n))$ stack space to run – the space complexity becomes $O(log(n))$.
 
 Merge sort is stable because if there is duplicates, the ones that come earlier in the array stay on the left and ones that come later in the array stay on the right. Their relative positions are preserved in the merging stage.
 
