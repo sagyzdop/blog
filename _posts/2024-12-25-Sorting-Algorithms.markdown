@@ -733,10 +733,9 @@ Actually, watching the whole [playlist](https://youtube.com/playlist?list=PLDN4r
 
 ### Characteristics
 
-| Time Complexity |                      |
-| --------------- | -------------------- |
-| Classic         | $O(n \times log(n))$ |
-| With Heapify    | $O(n)$               |
+| Time Complexity (with Heapify) | $O(n)$ |
+| ------------------------------ | ------ |
+
 
 ## Linear Search
 
