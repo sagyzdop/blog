@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-# What is this for?
+## What is this for?
 
 > Hello, World!
 
@@ -12,7 +12,7 @@ This is my take on private telegram channels people create for themselves. I hav
 
 Short answer is: **to answer questions**.
 
-## Questions
+### Questions
 
 Growing up is interesting. It raises a lot of questions. Some of them you were just not old enough to answer, and some of them you never thought you'd be asking. Those questions put you in a state of uncertainty, you feel lost, maybe even scared. 
 
@@ -23,7 +23,7 @@ Such questions are relevant for everyone, but answering them takes a lot of time
 But where to find these answers?
 
 
-## Conversation
+### Conversations
 
 No human is born with innate knowledge. To form an opinion you have to have some **input**. Fortunately, nowadays quality input is all around us and accessible more than ever before. 
 
@@ -34,7 +34,7 @@ I seek for the **input** in **conversations**. How grateful I am for the opportu
 Thus, I truly appreciate people that are up for an **open** debate (emphasis on open). Fortunately, people around me usually are.
 
 
-## Value
+### Value
 
 If I die tomorrow – my entire existence would be pointless. I didn't manage to generate much value to the world yet. So what can I do? 
 
