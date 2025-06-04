@@ -2,7 +2,7 @@
 layout: post
 title: "Why Will God Never Die?"
 excerpt: "Or why, I think, Einstein and The Beatles were wrong."
-date: 2024-12-03 01:01:01 +0500
+date: 2024-12-03 12:12:12 +0500
 categories: longread
 tags:
 - series
@@ -189,5 +189,9 @@ Therefore, however advanced the science gets, however accurately our theories de
 Moreover, the fact that we cannot “know” for sure also is not that important, because we “know enough”. In this context, God can be viewed as the thing that fills this epistemic gap in our understanding of the world, but it is not necessary, nor is it as important as the traditional religions describe it.
 
 In the next article in this series, we will think about how we even end up with thoughts. We will explore the origins of the human mind and consciousness, exploring topics such as the problem of identity, rationalization, and emotions.
+
+---
+
+## Footnotes
 
 [^1]:  I will be using reality, nature and the world equivalently. This clarification is important because there is also a view of naturalism, which is quite different from physicalism. However, when referring to nature I exclusively mean the reality that is described by physics (and other natural sciences), and when calling something "natural" I mean "as expected in said reality". Everything that is not expected, or not necessary to describe the reality – is not real, i.e. supernatural or unnatural. By this definition anything that does not violate the laws of physics is natural. People often use "nature" to justify their opinion. For instance, remarks about women being emotionally unstable or men being brutally violent because it is "natural", or how being gay is against nature. I think these arguments can have a truth value in the right context and with the appropriate definition of nature. However, in the context of this and following articles "nature" only relates to physics.

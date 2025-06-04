@@ -32,6 +32,8 @@ theme: minima
 plugins:
   - jekyll-feed
 show_excerpts: true
+kramdown:
+  toc_levels: 1..4
 
 # Exclude from processing.
 # The following items will not be processed, by default.

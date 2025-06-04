@@ -2,7 +2,7 @@
 layout: post
 title: "Better Be Stupid Than Sorry"
 excerpt: "A rant about human relationships."
-date: 2025-02-02 01:01:01 +0500
+date: 2025-02-02 12:12:12 +0500
 categories: post
 tags:
 - relationships

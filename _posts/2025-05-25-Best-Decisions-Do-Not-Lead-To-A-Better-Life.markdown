@@ -2,7 +2,7 @@
 layout: post
 title: "Best Decisions Do Not Lead To A Better Life"
 excerpt: "About the modern obsession with optimizing everything, capitalism, my personal experience with it and how to live a good life in the world of endless opportunities."
-date: 2025-05-25 01:01:01 +0500
+date: 2025-05-25 12:12:12 +0500
 categories: longread
 tags:
 - fobo
@@ -179,6 +179,10 @@ Nowadays, you have the choice to see what others have done and are doing out the
 This is not a rant directed against capitalism or a call to action against the system. It is not about the toxic productivity, nor is it an advice on how to make your life better. It is also not me searching for cope and an excuse not to work 😄 I apologize if it reads all around the place, attempting to capture multiple loaded topics on many different levels. I think the final message that I wanted to get across is the following.
 
 The world we were born into is far from perfect. No one is born all-knowing into it. There is no "right" or "best" answer to anything. There are some questions that have no answer at all. Therefore, the are no "best" decisions. We live in times where we have so many options, and being able to tell right from wrong is more important than ever. But getting comfortable with that inevitable ignorance and having the courage to act even when there is uncertainty is what actually makes you better and ultimately gets you closer to your goals. It is also important to not let that pressure of having to get better harm relationships and remember that we are all in this together. Good AND sad thing is that no one knows shit. But by following the examples of the courageous ones among us that were kind enough to share their experience we can make the decision to act a little bit easier.
+
+---
+
+## Footnotes
 
 [^1]: Having kids is a very selfish thing, huh?
 [^2]: A friend of mine was genuinely surprised when I bought some random moisturizing cream from a supermarket (I just needed a cream because my skin was drying out from winter's cold) and jokingly mocked me for it, saying: "you have lost your powers", haha.

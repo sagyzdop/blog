@@ -2,7 +2,7 @@
 layout: post
 title: "What to do after School? A Conventional Approach"
 excerpt: "Compilation of thoughts on questions that have bothered me and my peers in the last years of school."
-date: 2024-02-12 01:01:01 +0500
+date: 2024-02-12 12:12:12 +0500
 categories: longread
 tags:
 - school
@@ -168,6 +168,10 @@ In my opinion, it is not completely true and can't be true. Sure, everyone is di
 Aside from that, my arguments up to this point were mainly from a rationalistic perspective. I wonder sometimes that it might just be that you don't actually need all of this thinking and should just go by feeling? Maybe all of this does not have to have a reason? But feelings are very volatile and highly depend on the context, basically – not reliable. Thus, I strongly believe that feelings shouldn't lead your decision-making. I may be wrong, but that's a point to consider.
 
 Moreover, this is labeled a "conventional approach" for a reason. As much as I tried to generalize the ideas,  what is discussed here is only one of many possible answers to the question, and it is certainly not the only path to success. As quite some time has passed since 11th grade there has been a lot of new input with alternative perspectives, which I want to talk about in the future.
+
+---
+
+## Footnotes
 
 [^what-kind-of-job]: To be clear, finding a job is not that hard if you try. In fact, you could easily find a job that pays well even at a very young age. However, it usually involves a kind of labor that requires you to sacrifice something, most commonly your health. Here, I am talking about a more conventional way of building a career, one that comes after you graduate from university.
 

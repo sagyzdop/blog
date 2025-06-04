@@ -2,7 +2,7 @@
 layout: post
 title: "Pumping Lemma (for Regular Languages)"
 excerpt: "Explanation of the Pumping Lemma with example proof."
-date: 2025-01-30 00:01:01 +0500
+date: 2025-01-30 12:12:12 +0500
 categories: post
 tags:
 - regular-languages

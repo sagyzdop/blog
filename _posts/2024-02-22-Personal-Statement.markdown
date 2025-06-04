@@ -2,7 +2,7 @@
 layout: post
 title: "Personal Statement that took me home, country roads"
 excerpt: "Story about how we shot a commercial video with grannies."
-date: 2024-02-22 01:01:01 +0500
+date: 2024-02-22 12:12:12 +0500
 categories: post
 tags:
 - university
