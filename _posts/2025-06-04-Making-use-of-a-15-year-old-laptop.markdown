@@ -326,7 +326,7 @@ Look for the address that comes after `inet` under the ethernet or Wi-Fi interfa
 
 If everything is working correctly, you should be able to connect to your server via `ssh` from a computer that is in the same network.
 
-> To learn more about `ssh` [look here](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys).
+> To learn more about SSH [look here](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys).
 
 From another computer's terminal:
 
@@ -398,7 +398,7 @@ The final step for changes to take effect is rebooting your system simply with:
 sudo reboot
 ```
 
-If everything goes well, you can hide your laptop in a closet (just make sure it is not a fire hazard) and just `ssh` into it from your personal computer.
+If everything goes well, you can hide your laptop in a closet (just make sure it is not a fire hazard) and just ssh into it from your personal computer.
 
 ---
 
@@ -660,16 +660,16 @@ The "ugly IP address" part is handled by your Internet Service Provider (ISP), w
 
 The "pretty address" part is controlled by someone called Domain Name Registrar. They essentially store what pretty addresses correspond to what ugly addresses. When you buy a domain name, they remember that domain as yours, and you can then add a DNS record to point it to your public IP. (Buying a domain name does not make you an owner – you just pay to reserve it for a certain amount of time.) Anyone accessing that domain in their browser goes through DNS (domain name system) finds your server's IP, and can access your server over the Internet.
 
-So, basically, it boils down to this:
+And if represented graphically, it looks something like this:
+
+![Server Scheme](../../../../images/Making-use-of-a-15-year-old-laptop/Server%20Scheme.jpeg)
+
+So, if you want to access your server over the Internet like you would access `photos.google.com`, what you have to do is:
 1. Buy a domain name, and add a DNS record that points to your public IP.
 2. In your router's settings forward the appropriate ports to your server.
 3. If you have multiple apps/websites on your server configure a "reverse proxy" that points to the correct application/website you want to access.
 
-And if represented graphically, something like this:
-
-![Server Scheme](../../../../images/Making-use-of-a-15-year-old-laptop/Server%20Scheme.jpeg)
-
-FORTUNATELY, there IS an easier way – Tailscale.
+That sounds like a lot. FORTUNATELY, there IS an easier way – Tailscale.
 
 ### Tailscale
 
@@ -679,7 +679,7 @@ Considering all that, I discovered that the quickest and easiest way for me to a
 
 [Install](https://tailscale.com/download) the Tailscale client on devices you want to access your server from and log in (I recommend logging in with Google). Then install Tailscale on the server [by this guide](https://tailscale.com/kb/1476/install-ubuntu-2404):
 
-SSH into your server, and add Tailscale's package signing key and repository:
+Ssh into your server, and add Tailscale's package signing key and repository:
 
 ```sh
 curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/noble.noarmor.gpg | sudo tee /usr/share/keyrings/tailscale-archive-keyring.gpg >/dev/null
