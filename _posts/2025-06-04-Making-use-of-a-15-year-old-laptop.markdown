@@ -26,7 +26,7 @@ tags:
 
 ### Tribute to the star of the show
 
-![Laptop](../../../../images/Making-use-of-a-15-year-old-laptop/Laptop.jpeg)
+![Laptop](../../../../images/Making-use-of-a-15-year-old-laptop/Laptop%20(1).jpeg)
 
 Before I got a Mac, God bless, I was rocking a [2009 Dell Latitude E6410](https://www.notebookcheck.net/Review-Dell-Latitude-E6410-Notebook.32771.0.html) that ended up in my disposal essentially for free after being decommissioned from some office.
 
@@ -56,7 +56,6 @@ So, I went on a four-day quest to figure out how to do it. I had no idea what I 
 
 Consequently, this is for someone who has absolutely no idea about how server systems work but has some experience in tinkering with computers and using the terminal (command line interface). For dads doing a side-quest if you will. Also, it will be a useful reference for myself, if I ever come back to it sometime in the future.
 
-
 **Table of contents**
 
 ---
@@ -74,9 +73,11 @@ I assume that you don't have anything to save on your old computer's drive. If y
 
 Besides that, there are quite a lot of footnotes that give some context and links to useful resources throughout this post, which I recommend looking at as you follow along.
 
-## Installing Ubuntu Server
+## Ubuntu Server
 
 The first thing to do was to get rid of Windows and install Linux.[^1] Since it will act as a server, it makes sense to get a server distro. I went with [Ubuntu Server](https://ubuntu.com/download/server) as it seems to be the most reliable out of all available options out there.
+
+### Installing Ubuntu Server
 
 First, download the image for the LTS[^2] version of Ubuntu Sever from their [website](https://ubuntu.com/download/server). I recommend using [torrent](https://releases.ubuntu.com/24.04/ubuntu-24.04.2-live-server-amd64.iso.torrent), as it is much faster.
 
@@ -344,7 +345,7 @@ sudo apt update
 sudo apt upgrade --yes
 ```
 
-### Power Configuration
+### Power configuration
 
 One more thing you probably want to do before we proceed is:
 
@@ -405,15 +406,13 @@ Now, let's talk about how can we actually use this thing. In the following secti
 
 ## Immich
 
-> Self-hosted photo and video management solution
-
-[Immich](https://immich.app) is an open-source Google Photos alternative. If you've ever used Google Photos, this will feel like at home. They also have a [demo](https://demo.immich.app/auth/login) if you want to get familiar with the available functionality.
+[Immich](https://immich.app) is an open-source and self-hosted Google Photos alternative. If you've ever used Google Photos, this will feel like at home. They also have a [demo](https://demo.immich.app/auth/login) if you want to get familiar with the available functionality.
 
 ![Immich demo](../../../../images/Making-use-of-a-15-year-old-laptop/Immich%20demo.jpeg)
 
 Installing and running Immich on your server is quite straightforward, thanks to good [documentation on their website](https://immich.app/docs/install/docker-compose). I will go with the recommended install method using Docker [^6] Compose.
 
-### Install Docker
+### Installing Docker
 
 First, install Docker Engine following [these instructions](https://docs.docker.com/engine/install/ubuntu/).
 
@@ -445,7 +444,7 @@ And finally:
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
-### Install Immich
+### Installing Immich
 
 Head over to the `/srv` directory:[^7]
 
@@ -467,7 +466,7 @@ sudo wget -O docker-compose.yml https://github.com/immich-app/immich/releases/la
 sudo wget -O .env https://github.com/immich-app/immich/releases/latest/download/example.env
 ```
 
-### Configure Immich
+### Configuring Immich
 
 Open the `.env` file:
 
@@ -497,9 +496,7 @@ Now exit and save the changes, and run Immich:
 sudo docker compose up -d
 ```
 
-Now, if everything went well, you should be able to see Immich if you visit `http://{IP_OF_YOUR_SERVER}:2283` from a device that is on the same network as your server. Also, note that there are desktop and mobile apps available.
-
-### Post Install Instructions
+Now, if everything went well, you should be able to see Immich if you visit `http://{IP_OF_YOUR_SERVER}:2283` from a device that is on the same network as your server. 
 
 What you need to do after the installation is well documented – [here](https://immich.app/docs/install/post-install/). But one thing I want to share is my storage template:
 
@@ -539,7 +536,7 @@ I think this structure preserves some useful information if the Immich goes kapu
 
 Cool. If photo storage is all you need you can skip this part. But I wanted some basic file storage too. And for my needs – [Nextcloud](https://nextcloud.com) – was the best option. There are multiple [versions](https://nextcloud.com/install/) of it and many ways you can install it, but the one that worked for me is through [snap](https://github.com/nextcloud-snap/nextcloud-snap). (You might have noticed `nextcloud` snap package [earlier](#Featured%20server%20snaps%20screen) when installing Ubuntu.)
 
-### Install Nextcloud
+### Installing Nextcloud
 
 To install it run:
 
@@ -547,7 +544,7 @@ To install it run:
 sudo snap install nextcloud
 ```
 
-### Configure Nextcloud
+### Configuring Nextcloud
 
 > For the complete documentation, visit [their wiki](https://github.com/nextcloud-snap/nextcloud-snap/wiki). It is very useful but a bit confusing. I tried to extract the most important bits.
 
@@ -613,7 +610,7 @@ On the next screen, you will see this:
 
 ![Nextcloud recommended apps screen](../../../../images/Making-use-of-a-15-year-old-laptop/Nextcloud%20recommended%20apps%20screen.jpeg)
 
-Nextcloud is actually not just a file-storing app, it can replace all the Google services altogether, and more!.. If you are interested, you can look for details on the Internet, I personally didn't need that and just skipped.
+Nextcloud is actually not just a file-storing app. It can replace all the Google services altogether, and more! If you are interested, you can look for details on the Internet, I personally didn't need that and just skipped.
 
 You will see a dashboard:
 
@@ -682,7 +679,7 @@ Considering all that, I discovered that the quickest and easiest way for me to a
 
 [Install](https://tailscale.com/download) the Tailscale client on devices you want to access your server from and log in (I recommend logging in with Google). Then install Tailscale on the server [by this guide](https://tailscale.com/kb/1476/install-ubuntu-2404):
 
-Add Tailscale's package signing key and repository:
+SSH into your server, and add Tailscale's package signing key and repository:
 
 ```sh
 curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/noble.noarmor.gpg | sudo tee /usr/share/keyrings/tailscale-archive-keyring.gpg >/dev/null
@@ -702,15 +699,36 @@ Connect your machine to your Tailscale network and authenticate in your browser:
 sudo tailscale up
 ```
 
-You can find your Tailscale IPv4 address by running:
+This will display a message:
+
+```
+To authenticate, visit:
+
+	https://login.tailscale.com/a/abcdefg12345
+
+```
+
+Visit that link and log in with the account you signed up with to connect your server to the [Tailnet](https://tailscale.com/kb/1136/tailnet) (the private network crated by Tailscale). 
+
+
+In your Tailscale admin console you should enable MagicDNS. [Here is how to](https://tailscale.com/kb/1081/magicdns). There you should also [disable key expiry](https://tailscale.com/kb/1028/key-expiry) for the server.
+
+> If you installed Nextcloud don't forget to add the MagicDNS address to the list of trusted domains as described [earlier](#Setting%20trusted%20domains).
+
+Aside from the MagicDNS, you can also find sever's regular IPv4 address in the Tailnet by running:
 
 ```sh
 tailscale ip -4
 ```
 
-And [disable key expiry](https://tailscale.com/kb/1028/key-expiry).
+As a result, you can access your server with 3 different addresses:
 
-As a result, given that all the devices are running Tailscale and connected to the same Tailnet, you will have access to Immich and Nextcloud from your browser under something like:
+1. **Local IP address** that you can use if you are connecting from the same network.
+2. **Tailnet IP address** that you can use to connect to your server if both the server and the device you are connecting from are running Tailscale and are connected to the same Tailnet.
+3. **MagicDNS** that is a pretty version of the Tailnet IP address which is functionally the same.
+
+
+Thanks to MagicDNS, you can now access Immich and Nextcloud from your browser with an easy to remember address like:
 
 ```
 server-name.magic-dns.ts.net:2283
@@ -727,42 +745,42 @@ At this point, you have yourself a fully functional server that replaces Google 
 
 ### Accessing the server with a custom domain
 
-Tailscale is probably your best bet for a home server storing photo albums and your personal files. The tremendous benefit that comes with using Tailscale is the fact that you don't have to worry about securing your network and other shenanigans that come with exposing your server to the Internet. But if you want to use this server, say, for hosting a website(s), you will have to go through all of that that we discussed earlier. Luckily, modern services and software make this process less painful, and it is pretty simple once you understand the general idea.
+Tailscale is probably your best bet for a home server storing photo albums and your personal files. The tremendous benefit that comes with using Tailscale is the fact that you don't have to worry about security risks that come with exposing your server to the Internet. But if you want to use this server, say, for hosting a website(s), you will have to go through all of that that we discussed earlier. Luckily, modern services and software make this process less painful, and it is pretty simple once you understand the general idea. I will follow the path you need to take outlined in [here](#Some%20theory).
 
 > Note that I never really had a chance to get this part working on my setup because I didn't have access to a public IP,[^8] so the following sections are not as detailed.
 
-#### Custom domain registration
+#### 1. Custom domain registration
 
 This is the easiest part. Just pick a domain name registrar, choose any domain name you like, and that is it. And I mean any – `helicopterhelicopter.com` is available for only $10.44/year. I personally use Cloudflare and can recommend it.
 
 > Cloudflare also offers many cool features for free, like email routing and website analytics.
 
-#### Creating a DNS Record with Static or Dynamic IP
+#### 2. Creating a DNS Record with Static or Dynamic IP
 
-Most probably, your ISP provides you a dynamic IP address, and usually, a static IP is available for some fee. If you have a static IP already, or you are willing to pay for it, you can skip this part. However, it is relatively trivial to set up a service that will dynamically change your DNS records to point to your server at all times.
+Most probably, your ISP provides you a dynamic IP address, and usually, a static IP is available for some fee. If you have a static IP already, or you are willing to pay for it, you can just add a DNS record that points your custom domain to that IP and skip to the next part. Here is a [Cloudflare's guide on adding a DNS record](https://developers.cloudflare.com/dns/manage-dns-records/how-to/create-dns-records/). The process is pretty much the same for all providers. But if you don't have static IP, it is relatively trivial to set up a service that will dynamically change your DNS records to point to your server at all times.
 
-One thing to note – if you have a static public IP address – you can access your server from the Internet just by that IP, without the need for a custom domain. It is just a matter of what you choose to pay for. I'd prefer a pretty pretty address to an IP.
+> One thing to note – if you have a static public IP address – you can access your server from the Internet just by that IP, without the need for a custom domain. It is just a matter of what you choose to pay for. I'd prefer a pretty address.
 
-The [guide on the Cloudflare website](https://developers.cloudflare.com/dns/manage-dns-records/how-to/managing-dynamic-ip-addresses/) points to [ddclient](https://github.com/ddclient/ddclient) dynamically update DNS records. You can follow [this](https://medium.com/@timothy.halim/ddclient-cloudflare-setup-in-ubuntu-e271c53d3ce8) and [this](https://github.com/mcblum/ddclient-cloudflare-ubuntu) excellent guides to get it to work. There is [official documentation](https://ddclient.net), and, of course, Google and ChatGPT.
+The [guide on the Cloudflare website](https://developers.cloudflare.com/dns/manage-dns-records/how-to/managing-dynamic-ip-addresses/) points to [ddclient](https://github.com/ddclient/ddclient). You can follow [this](https://medium.com/@timothy.halim/ddclient-cloudflare-setup-in-ubuntu-e271c53d3ce8) and [this](https://github.com/mcblum/ddclient-cloudflare-ubuntu) excellent guides to get it to work. There is [official documentation](https://ddclient.net), and, of course, Google and ChatGPT.
 
 The general idea is this:
 1. Make a DNS record that points to your dynamic public IP.
 2. Get an API key from your domain name provider that will allow you to change the DNS record.
 3. Install the ddclient on the server and configure it with the API key from your domain name provider.
 
-#### Port forwarding
+#### 3. Port forwarding
 
-Now for this part, you'll need to connect to your router. Look up your router's model and find the address to connect to its admin panel. Usually it is `http://192.168.0.1` or `http://192.168.1.1`. Put in your login and password. If you don't know these, both the default login and password on almost all routers is `admin`, but if that doesn't work, you can always reset your router. Google how to do all that for your specific router. Here is a guide from [tp-link](https://www.tp-link.com/us/support/faq/1379/) as an example.
+Now for this part, you'll need to connect to your router via LAN or Wi-Fi. Look up your router's model and find the address to connect to its admin panel. Usually it is `http://192.168.0.1` or `http://192.168.1.1`. Put in your login and password. If you don't know these, both the default login and password on almost all routers is `admin`, but if that doesn't work, you can always reset your router. Google how to do all that for your specific router. Here is a guide from [tp-link](https://www.tp-link.com/us/support/faq/1379/) as an example.
 
 Once in your router's settings, you'll need to forward ports `80` and `443` on your router to the internal IP address of your server (the `{SERVER_IP_ADDRESS}` you found earlier).
 
-#### Reverse proxy server
+#### 4. Reverse proxy server
 
 You might be familiar with the term "proxy server". We all had to use it during the 2022 January Events when the government blocked all Internet in the country. There is a great [article from Cloudflare](https://www.cloudflare.com/en-gb/learning/cdn/glossary/reverse-proxy/) explaining what is reverse proxy server.
 
-In a nutshell, your router forwards incoming web traffic (on ports `80` and `443`) to the server running the reverse proxy. The reverse proxy then inspects the requested domain name (e.g., `immich.yourdomain.com`). Based on this domain, it routes the traffic to the correct internal service (like Immich on `http://localhost:2283` or Nextcloud on `http://localhost:85`). A major benefit of using a reverse proxy is that it can also handle SSL/TLS encryption, allowing you to easily set up secure HTTPS for all your services, often automatically (especially with Caddy or Nginx Proxy Manager with Let's Encrypt).
+In a nutshell, your router forwards incoming web traffic (on ports `80` and `443`) to the server running the reverse proxy. The reverse proxy then inspects the requested domain name (e.g. `immich.yourdomain.com`). Based on this domain, it routes the traffic to the correct internal service (like Immich on `http://localhost:2283` or Nextcloud on `http://localhost:85`).
 
-I tried a couple of services to set up a reverse proxy – [Nginx Proxy Manager](https://nginxproxymanager.com) and [Caddy](https://caddyserver.com). The former one is more beginner-friendly and easier to set up, again, YMMV.
+I tried a couple of services to set up a reverse proxy – [Nginx Proxy Manager](https://nginxproxymanager.com) and [Caddy](https://caddyserver.com). The former one is more beginner-friendly and easier to set up, again, YMMV. Besides that, major benefit of using a reverse proxy is that it can also handle SSL/TLS encryption, allowing you to easily set up secure HTTPS for all your services if you need it.
 
 ---
 
@@ -780,19 +798,23 @@ What you want to consider is using multiple drive configuration with a RAID set 
 
 Why doesn't everyone do this? Well, the reason why people pay Google to store their files and photos is the convenience of not having to worry about solving potential problems.
 
-First thing, those projects are open source and under development, hence there will inevitably be some bugs that you would have to deal with. For example, uploading too many files at once to Immich can cause some of them to be interpreted as duplicates, causing a server error. However, because you can connect to it with a Tailscale address, and also with the server's local IP address from the same network – switching between the two can solve this issue.
+First thing, those projects are open source and under development, hence there will inevitably be some bugs that you would have to deal with. For example, uploading too many files at once to Immich can cause some of them to be interpreted as duplicates, causing a server error. However, because you can connect to it with 3 different ways – switching between them can solve this issue.
 
 Second, you have to deal with updates. You can set it up to be automatic, but that is some additional work to do.
 
 Third, depending on the quality of your connection, your hardware, and your use case, the upload/download times might be slow. But this is true for Google services too.
 
+Besides, there are also security risks. If you have some sensitive information to store you will need to worry about that.
+
 On the upside, the desktop and mobile apps of these services work quite well. Especially the folder syncing feature on Nextcloud's desktop app works flawlessly and, in my opinion, even better than Google's. Stability-wise, the longest uptime of my setup was two weeks without any problems.
 
-Even considering all that, I think it is worthwhile to at least try.
+Even with all that though, I think it is still worthwhile and interesting project to try.
 
 If you have any suggestions or notice an error or outdated information – please contact me!
 
 Peace ✌️
+
+![Laptop](../../../../images/Making-use-of-a-15-year-old-laptop/Laptop%20(2).jpeg)
 
 ---
 
