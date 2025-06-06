@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Making use of a 15-year-old laptop"
-excerpt: "This one is about how I turned my 15-year-old laptop into a home server to replace Google Photos and Google Drive. It is a log of my four-day journey figuring this stuff out from scratch, since I didn't know much about servers. It can be a good starting point for anyone who wants to do the same. The topic covered include installing Ubuntu Server, getting apps like Immich and Nextcloud running, and accessing them over the Internet."
+excerpt: "This one is about how I turned my 15-year-old laptop into a home server to replace Google Photos and Google Drive. It is a log of my four-day journey figuring this stuff out from scratch, since I didn't know much about servers. It can be a good starting point for anyone who wants to do the same. The topics covered include installing Ubuntu Server, getting apps like Immich and Nextcloud running, and accessing them over the Internet."
 date: 2025-06-04 12:12:12 +0500
 categories: post
 tags:
@@ -186,7 +186,7 @@ Now, create a partition for personal data.
 
 Under `Mount` choose `Other` and name it something like `data`.
 
-> IMPORTANT: If you want to install Nextcloud this name has to be either `/mnt` or `/media`. Refer to [this part](#Configure%20Nextcloud) before continuing.
+> IMPORTANT: If you want to install Nextcloud this name has to be either `/mnt` or `/media`. Refer to [this part](#configuring-nextcloud) before continuing.
 
 Note that leaving the `Size` field blank will create a partition with all the available space:
 
@@ -482,7 +482,7 @@ DB_DATA_LOCATION=./postgres
 DB_PASSWORD=postgres
 ```
 
-We want to store the library and other data in the separate partition created at the Ubuntu installation [earlier](#Storage%20config%20screen%20(9)). And the password is just a security measure. You don't even have to remember it, just change it to whatever you like.
+We want to store the library and other data in the separate partition created at the Ubuntu installation [earlier](#storage-config-screen-9). And the password is just a security measure. You don't even have to remember it, just change it to whatever you like.
 
 ```.env
 UPLOAD_LOCATION=/data/immich-library
@@ -534,7 +534,7 @@ I think this structure preserves some useful information if the Immich goes kapu
 
 ## Nextcloud
 
-Cool. If photo storage is all you need you can skip this part. But I wanted some basic file storage too. And for my needs – [Nextcloud](https://nextcloud.com) – was the best option. There are multiple [versions](https://nextcloud.com/install/) of it and many ways you can install it, but the one that worked for me is through [snap](https://github.com/nextcloud-snap/nextcloud-snap). (You might have noticed `nextcloud` snap package [earlier](#Featured%20server%20snaps%20screen) when installing Ubuntu.)
+Cool. If photo storage is all you need you can skip this part. But I wanted some basic file storage too. And for my needs – [Nextcloud](https://nextcloud.com) – was the best option. There are multiple [versions](https://nextcloud.com/install/) of it and many ways you can install it, but the one that worked for me is through [snap](https://github.com/nextcloud-snap/nextcloud-snap). (You might have noticed `nextcloud` snap package [earlier](#featured-server-snaps-screen) when installing Ubuntu.)
 
 ### Installing Nextcloud
 
@@ -556,7 +556,7 @@ The most important settings you would want to configure are the following.
 
 > The partition you want to use must be mounted *somewhere* in `/media/` or `/mnt/`. These are the only locations the snap can access under confinement with the `removable-media` plug. Connect the `removable-media` plug as mentioned in the [README](https://github.com/nextcloud/nextcloud-snap/blob/master/README.md) in order to grant the snap permission to access external drives.
 
-This means that the custom partition we created here by choosing `Other` in the Ubuntu installation [earlier](#Storage%20config%20screen%20(9)) had to be not `/data` but `/mnt` or `/media`. I have it under `/mnt/nextcloud-library`. Consequently, I also have Immich under `/mnt/immich-libary`. Of course, you can put Immich and Nextcloud on separate partitions altogether, for example, in `/data` and `/mnt` respectively. Or configure it as a [bind mount](https://unix.stackexchange.com/questions/198590/what-is-a-bind-mount). Just make sure that the partition you want to use for Nextcloud is mounted in `/media/` or `/mnt/`.
+This means that the custom partition we created here by choosing `Other` in the Ubuntu installation [earlier](#storage-config-screen-9) had to be not `/data` but `/mnt` or `/media`. I have it under `/mnt/nextcloud-library`. Consequently, I also have Immich under `/mnt/immich-libary`. Of course, you can put Immich and Nextcloud on separate partitions altogether, for example, in `/data` and `/mnt` respectively. Or configure it as a [bind mount](https://unix.stackexchange.com/questions/198590/what-is-a-bind-mount). Just make sure that the partition you want to use for Nextcloud is mounted in `/media/` or `/mnt/`.
 
 Enable the connection of the partition:
 
@@ -665,9 +665,10 @@ And if represented graphically, it looks something like this:
 ![Server Scheme](../../../../images/Making-use-of-a-15-year-old-laptop/Server%20Scheme.jpeg)
 
 So, if you want to access your server over the Internet like you would access `photos.google.com`, what you have to do is:
-1. Buy a domain name, and add a DNS record that points to your public IP.
-2. In your router's settings forward the appropriate ports to your server.
-3. If you have multiple apps/websites on your server configure a "reverse proxy" that points to the correct application/website you want to access.
+1. Buy a domain name.
+2. Add a DNS record that points to your public IP. If your public IP is dynamic, set up an utility that dynamically updates the DNS record.
+3. In your router's settings forward the traffic on appropriate ports to your server.
+4. If you have multiple apps/websites on your server configure a "reverse proxy" that points to the correct application/website you want to access.
 
 That sounds like a lot. FORTUNATELY, there IS an easier way – Tailscale.
 
@@ -713,7 +714,7 @@ Visit that link and log in with the account you signed up with to connect your s
 
 In your Tailscale admin console you should enable MagicDNS. [Here is how to](https://tailscale.com/kb/1081/magicdns). There you should also [disable key expiry](https://tailscale.com/kb/1028/key-expiry) for the server.
 
-> If you installed Nextcloud don't forget to add the MagicDNS address to the list of trusted domains as described [earlier](#Setting%20trusted%20domains).
+> If you installed Nextcloud don't forget to add the MagicDNS address to the list of trusted domains as described [earlier](#setting-trusted-domains).
 
 Aside from the MagicDNS, you can also find sever's regular IPv4 address in the Tailnet by running:
 
@@ -745,7 +746,7 @@ At this point, you have yourself a fully functional server that replaces Google 
 
 ### Accessing the server with a custom domain
 
-Tailscale is probably your best bet for a home server storing photo albums and your personal files. The tremendous benefit that comes with using Tailscale is the fact that you don't have to worry about security risks that come with exposing your server to the Internet. But if you want to use this server, say, for hosting a website(s), you will have to go through all of that that we discussed earlier. Luckily, modern services and software make this process less painful, and it is pretty simple once you understand the general idea. I will follow the path you need to take outlined in [here](#Some%20theory).
+Tailscale is probably your best bet for a home server storing photo albums and your personal files. The tremendous benefit of using Tailscale is the fact that you don't have to worry about security risks that come with exposing your server to the Internet. But if you want to use this server, say, for hosting a website(s), you will have to go through all of that that we discussed earlier. Luckily, modern services and software make this process less painful, and it is pretty simple once you understand the general idea. I will follow the path you need to take outlined in [here](#some-theory).
 
 > Note that I never really had a chance to get this part working on my setup because I didn't have access to a public IP,[^8] so the following sections are not as detailed.
 
@@ -820,11 +821,11 @@ Peace ✌️
 
 ## Footnotes
 
-[^1]: My experience with Linux started with dual booting Ubuntu on my older laptop and successfully bricking it when I decided I didn't want Linux anymore, which led me to disassemble my laptop, taking out the HDD and manually copy all the data with another computer, then performing a fresh install of Windows… Ah, good times. Then I tried Mint but ultimately came back to Windows because of Office. Later, I used Fedora on a VM on a Mac for my courses at university, which, to be honest, was a great experience.
-[^2]: LTS stands for Long Term Support, which guarantees stability and support for longer than the latest version.
-[^3]: Flashing a bootable USB means downloading an OS installer to your USB and starting your computer with it as if it were your hard drive. The installer then installs an OS on the main drive, from which you can boot as usual afterward.
-[^4]: Google for "{YOUR LAPTOP MODEL} boot menu key". For most computers, it is `ESC`, `F2`, `F10` or `F12`.
+[^1]: My experience with Linux started with dual booting [Ubuntu](https://ubuntu.com) on my older laptop and successfully bricking it when I decided I didn't want Linux anymore, which led me to disassembling my laptop, taking out the HDD and manually copying all the data with another computer, then performing a fresh install of Windows… Ah, good times. Then I tried [Mint](https://linuxmint.com) but ultimately came back to Windows because of Office. Later, I used [Fedora](https://www.fedoraproject.org) on a VM on a Mac for my courses at university, which, to be honest, was a much better experience.
+[^2]: LTS stands for "Long Term Support", which guarantees stability and support for longer than the latest version.
+[^3]: Flashing a bootable USB means downloading an OS installer to your USB. Then by starting your computer from it you install an OS on the main drive.
+[^4]: Google for "boot menu key" for your laptop model. For most computers, it is `ESC`, `F2`, `F10` or `F12`.
 [^5]: Look [here](https://www.digitalocean.com/community/tutorials/an-introduction-to-lvm-concepts-terminology-and-operations) to learn more about LVM.
-[^6]: Docker is a technology that packages applications and all their necessary software (libraries, dependencies) into self-contained units called "containers". Think of it like a standardized shipping container for software. This ensures that an application runs the same way on your old laptop as it would on any other computer that can run Docker, regardless of the underlying system's specific configuration. It simplifies installation, avoids software conflicts, and helps manage different application environments efficiently. You don't need to be a Docker expert for this guide, as the provided commands set it up for you.
+[^6]: It is not required to know what is "Docker" for this, as the provided commands set it up for you, but if you are interested – [here is where to start](https://docs.docker.com/get-started/docker-overview/).
 [^7]: `/srv` directory [seems to be the convention](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch03s17.html) to place the services provided by the server.
-[^8]: Funny story, I didn't know that I didn't have access to a public IP right until I reset my router and found out it was under a Carrier-Grade NAT (CGNAT), which means that the router gets a private IP address from the ISP, essentially making direct port forwarding from the Internet impossible.
+[^8]: Funny story, I didn't know that I didn't have access to a public IP right until I reset my router and found out it was under a [Carrier-grade NAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT) (CGNAT), which meant that my router was getting only a private IP address from the ISP, essentially making direct port forwarding from the Internet impossible.
