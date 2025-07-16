@@ -24,8 +24,6 @@ tags:
 - tips
 ---
 
-# Simple Monitoring for NU Space
-
 ## Introduction
 
 ### What is Monitoring?
