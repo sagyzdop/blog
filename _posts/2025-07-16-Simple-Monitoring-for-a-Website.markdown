@@ -213,7 +213,7 @@ In my setup, Grafana connects to both Prometheus (for metrics) and Loki (for log
 
 The power of Grafana comes with the dashboards you can create literally however you like. This freedom and functionality are great if you know what you want; otherwise, it can be overwhelming. Luckily, there is a [library](https://grafana.com/grafana/dashboards/) with plenty of official and community examples that you can download or get inspiration from. I am using [Node Exporter Full](https://grafana.com/grafana/dashboards/1860-node-exporter-full/) and [cAdvisor Docker Insights](https://grafana.com/grafana/dashboards/19908-docker-container-monitoring-with-prometheus-and-cadvisor/) dashboards in my setup.
 
-### 5. Alerting
+### Stage 5. Alerting
 
 Monitoring isn't just about looking at dashboards; it's also about being informed when something goes wrong or deviates from expected behavior to address it ASAP and minimize the downtime. This is achieved through **alerting** and it is implemented by **rules** that are based on specific metrics or log patterns. For example, CPU usage above 90% for 5 minutes, or a number of 500 responses from your application in the last 5 minutes, is over 100. When these rules are met, alerts are triggered, and notifications are sent.
 
