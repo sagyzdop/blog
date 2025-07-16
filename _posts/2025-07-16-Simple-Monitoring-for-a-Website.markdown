@@ -110,7 +110,7 @@ Now we have the idea about the type of data we need. But to actually make use of
 | 6     | Access over the internet                                      |                                  |
 | 6.1   | Reverse proxy on the server side                              | NGINX                            |
 | 6.2   | VPN                                                           | Wireguard                        |
-| *     | Deployment                                                    | Docker Compose                   |
+| +     | Deployment                                                    | Docker Compose                   |
 
 As you can see, I divided the pipeline into 6 stages. In this post, I will go through stages 1 to 5. Configuring VPN in the last stage was its own can of worms, so much so that it deserves a separate post.
 
@@ -126,7 +126,7 @@ Here is a schematic of a whole monitoring system:
 
 > [Open in a new tab](https://blog.sagyzdop.com/images/Monolith-compose.svg) to take a closer look.
 
-This schematic actually displays the contents of the[ Docker Compose file](https://github.com/ulanpy/nuspace/blob/main/prod.docker-compose.yml) deployed at our production server. Each block (except the Google Cloud Storage) is a service inside this compose file. The utility services like RabbitMQ and Redis are omitted from the schematic for better readability, and only the FastAPI application service and NGINX reverse proxy service are present. Notice that the whole monitoring implementation requires only 5 additional services added to Docker Compose – Grafana Alloy, Prometheus, Alertmanager, Grafana, and Loki.
+This schematic actually displays the contents of the Docker Compose file deployed at our production server (`prod.docker-compose.yaml`). Each block (except the Google Cloud Storage) is a service inside this compose file. The utility services like RabbitMQ and Redis are omitted from the schematic for better readability, and only the FastAPI application service and NGINX reverse proxy service are present. Notice that the whole monitoring implementation requires only 5 additional services added to Docker Compose – Grafana Alloy, Prometheus, Alertmanager, Grafana, and Loki.
 
 Now that we have a general picture in our head, let's dive into the details of each stages of this monitoring system.
 
