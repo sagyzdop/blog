@@ -24,6 +24,15 @@ tags:
 - tips
 ---
 
+**Table of contents**
+
+---
+
+* TOC
+{:toc}
+
+---
+
 ## Introduction
 
 ### What is Monitoring?
@@ -151,7 +160,7 @@ I found it essential to understand the difference between the storage for indexe
 
 #### 3.1 Metrics Storage
 
-Time-Series Databases (TSDBs) – are databases optimized for storing and querying **time-stamped** data. Aforementioned Prometheus, which stores metrics, and Loki, which stores logs, use this kind of database to operate.
+[Time-Series Databases](https://www.influxdata.com/time-series-database/) (TSDBs) – are databases optimized for storing and querying **time-stamped** data. Aforementioned Prometheus, which stores metrics, and Loki, which stores logs, use this kind of database to operate.
 
 Here is an excellent [2-part blog post](https://blog.palark.com/prometheus-architecture-tsdb/) going into more technical details of how monitoring systems in general, and Prometheus in particular, works. For the purposes of this post it is enough to know that Prometheus has an implementation of such a database, and we are using it. Also note that we are not using cloud object store for storing metrics, because using local storage (the VM's drive) for metrics seems to be fine on our scale.
 
