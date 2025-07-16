@@ -298,7 +298,7 @@ Instead of that, we can put the monitoring on another server. This would also fr
 
 ![Decoupled-compose](../../../../images/Decoupled-compose.svg)
 
-> [Open in a new tab](https://blog.sagyzdop.com/images/Decoupled-compose.svg) to take a closer look. to take a closer look.
+> [Open in a new tab](https://blog.sagyzdop.com/images/Decoupled-compose.svg) to take a closer look.
 
 The nice thing about this, in my opinion, is the fact that it uses the same things as in the monolithic implementation. Besides, notice that only ONE additional service – Grafana Alloy – is added to the compose file on the application server. Everything else is on another server.
 
