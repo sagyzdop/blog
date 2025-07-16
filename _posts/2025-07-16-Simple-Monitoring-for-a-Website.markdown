@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Simple Monitoring for a Website"
-excerpt: "This one is about a simple monitoring solution I built for the [NU Space](https://nuspace.kz) web project using Grafana Alloy, Prometheus, Grafana Loki, Grafana, and Prometheus Alertmanager, orchestrated with Docker Compose and integrated with Google Cloud. This also can serve as a practical guide if you're looking to implement monitoring for your own medium-sized web project or a home server."
+excerpt: "This one is about a simple monitoring solution I built for the NU Space web project using Grafana Alloy, Prometheus, Grafana Loki, Grafana, and Prometheus Alertmanager, orchestrated with Docker Compose and integrated with Google Cloud. This also can serve as a practical guide if you're looking to implement monitoring for your own medium-sized web project or a home server."
 date: 2025-07-16 12:12:12 +0500
 categories: post
 tags:
