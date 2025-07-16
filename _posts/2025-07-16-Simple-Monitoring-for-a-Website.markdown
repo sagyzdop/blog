@@ -38,7 +38,7 @@ It's the same principle whether you're driving a car or running a web service. I
 
 > Monitoring in software systems refers to the collection and displaying the information about the application's performance and usage patterns so you can identify, mitigate, or resolve issues. –[Microsoft](https://learn.microsoft.com/en-us/devops/operate/what-is-monitoring)
 
-Recently, I got a task to implement monitoring on a project that I became a part of at the end of this Spring – [NU Space](https://nuspace.kz).[^1] 
+Recently, I got a task to implement monitoring on a project that I became a part of at the end of this Spring – [**NU Space**](https://nuspace.kz).[^1] 
 
 ![nuspace](../../../../images/nuspace.png)
 
@@ -114,6 +114,8 @@ The file structure and their contents relevant to monitoring in these two reposi
 Here is a schematic of a whole monitoring system:
 
 ![Monolith-compose](../../../../images/Monolith-compose.svg)
+
+> [Open in a new tab](https://blog.sagyzdop.com/images/Monolith-compose.svg) to take a closer look.
 
 This schematic actually displays the contents of the[ Docker Compose file](https://github.com/ulanpy/nuspace/blob/main/prod.docker-compose.yml) deployed at our production server. Each block (except the Google Cloud Storage) is a service inside this compose file. The utility services like RabbitMQ and Redis are omitted from the schematic for better readability, and only the FastAPI application service and NGINX reverse proxy service are present. Notice that the whole monitoring implementation requires only 5 additional services added to Docker Compose – Grafana Alloy, Prometheus, Alertmanager, Grafana, and Loki.
 
@@ -274,7 +276,7 @@ It is worth noting that Grafana Alloy is just a modification made by Grafana of 
 Funny enough, a YouTuber I have been following – [Christian Lempa ](https://www.youtube.com/@christianlempa)– released a [video](https://www.youtube.com/watch?v=E654LPrkCjo) just several days ago about Grafana Alloy that I recommend you to watch to the end. It would be a nice consolidation of everything that we talked about up to this point.
 
 <div style="position: relative; width: 100%; overflow: hidden; padding-top: 56.25%; margin: 20px 0px;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E654LPrkCjo?si=IOzxMsgHsITGO6wm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe style="position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; border: none;" src="https://www.youtube.com/embed/E654LPrkCjo?si=IOzxMsgHsITGO6wm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 > I think this stack we made deserves its own name that also includes Alloy. I wanna call it "PromLAG" 🤠 Maybe it'll stick if this gets traction.
@@ -286,6 +288,8 @@ One last thing. There is another solution to the concern "What if the VM is down
 Instead of that, we can put the monitoring on another server. This would also free up the resources on the application server from the load of the monitoring services. The theoretical decoupled stack will look something like this:
 
 ![Decoupled-compose](../../../../images/Decoupled-compose.svg)
+
+> [Open in a new tab](https://blog.sagyzdop.com/images/Decoupled-compose.svg) to take a closer look. to take a closer look.
 
 The nice thing about this, in my opinion, is the fact that it uses the same things as in the monolithic implementation. Besides, notice that only ONE additional service – Grafana Alloy – is added to the compose file on the application server. Everything else is on another server.
 
