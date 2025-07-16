@@ -81,7 +81,7 @@ The first thing to do was to get rid of Windows and install Linux.[^1] Since it 
 
 First, download the image for the LTS[^2] version of Ubuntu Sever from their [website](https://ubuntu.com/download/server). I recommend using [torrent](https://releases.ubuntu.com/24.04/ubuntu-24.04.2-live-server-amd64.iso.torrent), as it is much faster.
 
-Second, you'll have to "flash" a USB drive with this image and create a bootable USB. [^3] There are tutorials on how to do this from Canonical (the company that makes Ubuntu) for [Mac](https://ubuntu.com/tutorials/create-a-usb-stick-on-macos#1-overview), [Ubuntu](https://ubuntu.com/tutorials/create-a-usb-stick-on-ubuntu#1-overview) and [Windows](https://ubuntu.com/tutorials/create-a-usb-stick-on-windows#3-usb-selection).
+Second, you'll have to "flash" a USB drive with this image and create a bootable USB.[^3] There are tutorials on how to do this from Canonical (the company that makes Ubuntu) for [Mac](https://ubuntu.com/tutorials/create-a-usb-stick-on-macos#1-overview), [Ubuntu](https://ubuntu.com/tutorials/create-a-usb-stick-on-ubuntu#1-overview) and [Windows](https://ubuntu.com/tutorials/create-a-usb-stick-on-windows#3-usb-selection).
 
 Third, turn on your old laptop, get into the Boot Menu by pressing some function key different depending on the model [^4] (`F12` in my case), and choose your USB drive as your boot device. You will see this menu:
 

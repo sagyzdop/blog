@@ -25,7 +25,7 @@ This is a question we were all asked at some point in our childhood, with answer
 
 When no mama is singing you back to sleep no more, you realize that you actually have to work! And now the question is — how do you get a job? [^what-kind-of-job] This is how I've imagined it so far.
 
-First, you try something out of pure interest. Then, if you like it and you're good at it – you concentrate on that thing and get better at it. As you get older, you look for career opportunities that you can base on this passion of yours. You search for universities that offer programs in your area of interest and apply. If everything goes well, that's how you get specialized and get a job. [^entrepreneurship]
+First, you try something out of pure interest. Then, if you like it and you're good at it – you concentrate on that thing and get better at it. As you get older, you look for career opportunities that you can base on this passion of yours. You search for universities that offer programs in your area of interest and apply. If everything goes well, that's how you get specialized and get a job.[^entrepreneurship]
 
 Now, the problem for many of my peers and for me personally is the fear of making a wrong decision. High school was a time when we all had to choose what to do with our lives. That's quite a significant decision to make, innit? For me the problem was that I have a natural interest in many things and have a hard time focusing on one. I was afraid of becoming a jack of all trades and master of none.
 
@@ -72,7 +72,7 @@ Mostafa said:
 
 > You will use only about 5% of what you have learned at university on a real job. Everything else you will learn on the job.
 
-Indeed, this is very true and it raises a reasonable question: "Why spend several years of my life on something that I won't be needing anyway?". [^professions] That's a hard question to answer, and to make it easier, and to justify going to college for myself I had to break it down.
+Indeed, this is very true and it raises a reasonable question: "Why spend several years of my life on something that I won't be needing anyway?".[^professions] That's a hard question to answer, and to make it easier, and to justify going to college for myself I had to break it down.
 
 ### Why do you need the knowledge?
 

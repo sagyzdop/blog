@@ -75,7 +75,7 @@ Despite all these problems, the simplicity and spiritual power of theological th
 
 ## So, Why Physicalism?
 
-Ever since being introduced to physics in seventh grade I developed a physicalist view of reality. I remember being fascinated by the kinetic theory of gasses according to which temperature is nothing more than the sum of kinetic energies of the molecules. It appeared to me that physics is the most straightforward explanation for everything that ever happens in nature. [^1]
+Ever since being introduced to physics in seventh grade I developed a physicalist view of reality. I remember being fascinated by the kinetic theory of gasses according to which temperature is nothing more than the sum of kinetic energies of the molecules. It appeared to me that physics is the most straightforward explanation for everything that ever happens in nature.[^1]
 
 A system being nothing more than the sum of its parts is known as reductionism and I assume that this is true. From this assumption I define physicalism as a theory that claims that the common reality is fully reducible to physics. Both of these are reasonably highly debatable. So then why physicalism? 
 
